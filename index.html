@@ -8,8 +8,12 @@
                 background-color:rgb(0, 0, 0);
                 font-family:"Helvetica", sans-serif;
             }
+            #logo-cinencuadre {
+                width:100%;
+            }
             #intro-parrafo {
-                color:rgb(255,255,0);    
+                color:rgb(255,255,0);
+                clear:both;
             }
             h1 {
                 color:rgb(255,0,0);
@@ -62,20 +66,48 @@
                 width:30%;
                 float:right;
                 margin-left:20px;
-                position:fixed;
-                right:0px;
-                top:200px;
+                position:relative;
             }
             .img-pelicula {
                 width:70%;
                 margin-left:50px;
                 margin-right:50px;
             }
+            #logo-instagram {
+                float:right;
+                margin-left:10px;
+                width:20px;                
+            }
+            #siguenos {
+                text-align:right;
+                margin-right:10px;
+                font-size:14px;
+            }
+            #pie-pagina {
+                text-align:center;
+                font-size:12px;
+                color:rgb(120,180,180);
+            }
         </style>
     </head>
     <body>
         
+        <img id="logo-cinencuadre" href="https://github.com/cinencuadre/cinencuadre.github.io/blob/master/Logo%20fnd%20oscuro.png">
         <h1>Capas, sangre y colmillos</h1>
+        
+        
+        <div id="redes">
+            <p id="siguenos"><span><a href="https://www.instagram.com/p/CDhQtm6jiOd/">Síguenos en Instagram:</a></span>
+            <img id="logo-instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/240px-Instagram_logo_2016.svg.png"></p>
+        </div>
+        
+        
+        <div id="intro">
+            <h2>Introducción</h2>
+            <p><span id="intro-parrafo">Muestra "Capas, sangre y colmillos" realizada en el marco de la Segunda Muestra de Cine Fantástico y de Terror Fantasmagoría.</span></p>
+    
+
+        </div>         
 
         <div id="lista-dracula">
         <h3 id="indice">Películas</h3>
@@ -97,13 +129,7 @@
             <li><a href="#dracula-3d">Drácula 3D</a></li>           
         </ul> <br>
         </div>
-        
-        <div id="intro">
-            <h2>Introducción</h2>
-            <p><span id="intro-parrafo">Muestra "Capas, sangre y colmillos" realizada en el marco de la Segunda Muestra de Cine Fantástico y de Terror Fantasmagoría.</span></p>
-    
 
-        </div> 
         
         <div class="rsn-pelicula">        
         <h2 id="nosferatu">Nosferatu</h2>
@@ -374,7 +400,13 @@ Premio LAFCA a Willem Dafoe al Mejor actor de reparto.</li>
         <p>La película tuvo en general valoraciones negativas de la crítica.</p>
         
         <p><a href="#indice">Volver al Índice</a></p>
-        </div>        
+        </div>
+        
+        <div>
+            <p id="pie-pagina">cinEncuadre Colectivo<br>
+                Medellín, Colombia
+            </p>
+        </div>
         
     </body>
 </html>
