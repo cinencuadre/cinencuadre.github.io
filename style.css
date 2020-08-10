@@ -1,255 +1,159 @@
 body {
-	background-color:rgb(255, 255, 255);
-	font-family:"Optima", sans-serif;
-	margin:0px;
-	padding:0px;
-}
-
-            
-#banda-superior {
-	height:120px;
-	padding:0px;
-	margin-left:-200px;
-	text-align:left;
-	/*position:fixed;
-	top:0px;
-	left:0px;
-	width:100%;*/
-	background-color:black;
-}
-
-
-#logo {
-	object-fit:cover;
-	height:100px;
-	width:360px;
-	background-color:rgb(0, 0, 0);
-	margin:0px;
-	padding:10px;
-	margin-left:180px;
-}
-
-
-#logo-redes {
-	float:right;
-	background-color:black;
-	margin-top:20px;
-	vertical-align: middle;
-	width:250px;
-}
-
-
-#siguenos {
-	text-align:right;
-	padding:15px;
-	line-height:50px;
-	/*width: 200px;*/
-}    
-
-                        
-#logo-instagram {
-	float:right;
-	height:50px;                
-	margin:10px;
-	/*width:5%;*/
-}   
-
-
-#recuadro-declaracion {
-	background-color:black;
-	/*height:500px;*/
-	padding:10px;
-	padding-bottom:30px;
-	height:400px;
-}
-
-
-.declaracion {
-	padding: 10px;
-	margin-top:25px;
-	margin-left:20px;
-	margin-right:20px;
-	background-color:white;
-	width:45%;
-	min-height:115px;
-}
-
-
-#objetivos {
-	float:right;
-}
-
-
-.proyecto {
-	margin:15px;
-	padding:10px;
-	background-color:rgb(255,255,240);
-	font-size:12px;
-	clear:both;
-}
-
-            
-.img-portada {
-	object-fit: cover;
-	width:100%;
-	height:400px;
-	/*margin:0px;*/
-	margin-left:0px;
-	margin-right:0px;
-	padding:0px;
-}
-
-  
-.intro-proyecto {
-	margin:0px;
-	/*margin-top:500px;*/
-	padding:0px;
-	background-color:rgb(255,255,240);
-}
-            
-          
-.lista-proyecto {
-	background-color:rgb(255,255,240);
-	margin:0px;
-	padding:0px;
-	font-size:15px;
-}
-
-            
-.resenas {
-	background-color:rgb(255,230,255);
-	/*margin:0px;*/
-	padding:0px;
-	/*padding-top:20px;*/  
-	/*padding-bottom:20px;*/
-	font-size:15px;
-	width:90%;
-	margin:auto;
-}
-
-            
-.recuadro-proyecto {
-	background-color:rgb(20,250,160);
-	margin:0px;
-	padding:0px;  
-	font-size:15px;
-} 
-
-            
-.rsn-pelicula {
-	background-color:rgb(230,230,230);
-	/*float:left;
-	width:300px;                
-	height:500px;
-	overflow-y:auto;*/ 
-	min-height:300px;              
-	clear:both;     
-	margin:0px;        
-	margin-top:40px;
-	margin-bottom:40px;
-	padding:1px;
-	font-size:15px;
-}
-
-            
-.img-pelicula {
-	/*width:90%;*/
-	float:left;
-	/*width:30%;*/
-	/*height:200px;*/
-	object-fit:cover;
-	max-height:200px;
-	max-width:300px;
-	margin:10px;
-	padding:0px;
-	background-color:rgb(180,180,60);
-                
+    background-color:rgb(255, 255, 255);
+    font-family:"Optima", sans-serif;
+    margin:0px;
+    padding:0px;
 }
 
 
 h1 {
-	color:rgb(180,0,0);
-	background-color:rgb(255,230,230);
-	margin:0px;
-	padding:10px;
-	text-align:center;
-	font-size:25px;
+    color:rgb(180,0,0);
+    background-color:rgb(255,230,230);
+    margin:0px;
+    padding:10px;
+    text-align:center;
+    font-size:25px;
 }
 
-            
+
 h2 {
-	color:rgb(120,0,0);
-	background-color:rgb(255,230,230);
-	font-size:20px;
-	margin:0px;
-	padding:5px;
+    color:rgb(120,0,0);
+    background-color:rgb(255,230,230);
+    font-size:20px;
+    margin:0px;
+    padding:5px;
 }
 
-            
+
 h3 {
-	color:rgb(120, 0, 0);
-	margin:5px;
-	padding:0px;
-	font-size:15px;
+    color:rgb(120, 0, 0);
+    margin:5px;
+    padding:0px;
+    font-size:15px;
 }  
 
-            
+
 h5 {
-	margin:5px;
-	padding:0px;
-	color:rgb(120,0,0);
-	font-size:13px;
+    margin:5px;
+    padding:0px;
+    color:rgb(120,0,0);
+    font-size:13px;
 }
 
-            
+
 p {
-	color:rgb(40, 40, 40);
-	text-align: justify;
-	padding:10px;
-	margin:0px;
-	font-size:15px;
+    color:rgb(40, 40, 40);
+    text-align: justify;
+    padding:10px;
+    margin:0px;
+    font-size:15px;
 }
 
-            
+
 li {
-	color:rgb(40, 40, 40);
-	margin:0px;
-	padding-right:10px;   
-	font-size:15px;
-	text-align:justify;
-}
-
-            
-.pie-foto {
-	font-size: 10px;
-	color:rgb(90, 40, 40);
-	margin:0px;
-	padding:0px;
-}
-
-
-#pie-pagina {
-	text-align:center;
-	font-size:12px;
-	background-color:black;
-	color:rgb(100,80,80);
-	padding:15px;
-	clear:both;
+    color:rgb(40, 40, 40);
+    margin:0px;
+    padding-right:10px;   
+    font-size:15px;
+    text-align:justify;
 }
 
 
 a {
-	color:none;
+    color:none;
 }
 
 
-#futuro {
-	padding: 40px;                
-	width:100%;
-	/*height:405px;*/
-	background-color:rgb(255,230,230);
-	clear:both;
-	align-content:center;
+.cuadro {
+    padding: 10px;
+    margin-top:25px;
+    margin-left:20px;
+    margin-right:20px;
+    background-color:white;
+    width:45%;
+    min-height:115px;
 }
 
 
+.img-portada {
+    object-fit: cover;
+    width:100%;
+    height:400px;
+    /*margin:0px;*/
+    margin-left:0px;
+    margin-right:0px;
+    padding:0px;
+}
+
+.marco-completo {
+    margin:0px;
+    /*margin-top:500px;*/
+    padding:0px;
+    background-color:rgb(255,255,240);
+}
+
+
+.marco-reducido {
+    background-color:rgb(255,230,255);
+    /*margin:0px;*/
+    padding:0px;
+    /*padding-top:20px;*/  
+    /*padding-bottom:20px;*/
+    font-size:15px;
+    width:90%;
+    margin:auto;
+}
+
+
+.lista {
+    background-color:rgb(255,255,240);
+    margin:0px;
+    padding:0px;
+    font-size:15px;
+}
+
+
+.recuadro-proyecto {
+    background-color:rgb(20,250,160);
+    margin:0px;
+    padding:0px;  
+    font-size:15px;
+} 
+
+.rsn-pelicula {
+    background-color:rgb(230,230,230);
+    /*float:left;
+    width:300px;                
+    height:500px;
+    overflow-y:auto;*/ 
+    min-height:300px;              
+    clear:both;     
+    margin:0px;        
+    margin-top:40px;
+    margin-bottom:40px;
+    padding:1px;
+    font-size:15px;
+}
+
+
+.img-resena {
+    /*width:90%;*/
+    float:left;
+    /*width:30%;*/
+    /*height:200px;*/
+    object-fit:cover;
+    max-height:200px;
+    max-width:300px;
+    margin:10px;
+    padding:0px;
+    background-color:rgb(180,180,60);
+    
+}
+
+
+.pie-foto {
+    font-size: 10px;
+    color:rgb(90, 40, 40);
+    margin:0px;
+    padding:0px;
+}
