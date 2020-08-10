@@ -2,15 +2,176 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>cinEncuadre</title>
+        <!--<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/cinencuadre/cinencuadre.github.io/master/style.css">-->
         <style>
+
+            <!---->
             body {
                 background-color:rgb(255, 255, 255);
                 font-family:"Optima", sans-serif;
                 margin:0px;
                 padding:0px;
             }
-            
+
+
+            h1 {
+                color:rgb(180,0,0);
+                background-color:rgb(255,230,230);
+                margin:0px;
+                padding:10px;
+                text-align:center;
+                font-size:25px;
+            }
+
+
+            h2 {
+                color:rgb(120,0,0);
+                background-color:rgb(255,230,230);
+                font-size:20px;
+                margin:0px;
+                padding:5px;
+            }
+
+
+            h3 {
+                color:rgb(120, 0, 0);
+                margin:5px;
+                padding:0px;
+                font-size:15px;
+            }  
+
+
+            h5 {
+                margin:5px;
+                padding:0px;
+                color:rgb(120,0,0);
+                font-size:13px;
+            }
+
+
+            p {
+                color:rgb(40, 40, 40);
+                text-align: justify;
+                padding:10px;
+                margin:0px;
+                font-size:15px;
+            }
+
+
+            li {
+                color:rgb(40, 40, 40);
+                margin:0px;
+                padding-right:10px;   
+                font-size:15px;
+                text-align:justify;
+            }
+
+
+            a {
+                color:none;
+            }
+
+
+            .cuadro {
+                padding: 10px;
+                margin-top:25px;
+                margin-left:20px;
+                margin-right:20px;
+                background-color:white;
+                width:45%;
+                min-height:115px;
+                font-size:15px;
+            }
+
+
+            .img-portada {
+                object-fit: cover;
+                width:100%;
+                height:400px;
+                /*margin:0px;*/
+                margin-left:0px;
+                margin-right:0px;
+                padding:0px;
+            }
+
+            .marco-completo {
+                margin:0px;
+                /*margin-top:500px;*/
+                padding:0px;
+                background-color:rgb(255,255,240);
+            }
+
+
+            .marco-reducido {
+                background-color:rgb(255,230,255);
+                /*margin:0px;*/
+                padding:0px;
+                /*padding-top:20px;*/  
+                /*padding-bottom:20px;*/
+                font-size:15px;
+                width:90%;
+                margin:auto;
+            }
+
+
+            .lista {
+                background-color:rgb(255,255,240);
+                margin:0px;
+                padding:0px;
+                font-size:15px;
+            }
+
+
+            .recuadro-proyecto {
+                background-color:rgb(20,250,160);
+                margin:0px;
+                padding:0px;  
+                font-size:15px;
+            } 
+
+            .rsn-pelicula {
+                background-color:rgb(230,230,230);
+                /*float:left;
+                width:300px;                
+                height:500px;
+                overflow-y:auto;*/ 
+                min-height:300px;              
+                clear:both;     
+                margin:0px;        
+                margin-top:40px;
+                margin-bottom:40px;
+                padding:1px;
+                font-size:15px;
+            }
+
+
+            .img-resena {
+                /*width:90%;*/
+                float:left;
+                /*width:30%;*/
+                /*height:200px;*/
+                object-fit:cover;
+                max-height:200px;
+                max-width:300px;
+                margin:10px;
+                padding:0px;
+                background-color:rgb(180,180,60);
+                
+            }
+
+
+            .pie-foto {
+                font-size: 12px;
+                color:rgb(90, 40, 40);
+                margin:0px;
+                padding:0px;
+                font-weight:bold;
+            }
+            <!---->
+
+
             #banda-superior {
 
                 height:120px;
@@ -48,6 +209,7 @@
                 text-align:right;
                 padding:15px;
                 line-height:50px;
+                font-size:15px;
                 /*width: 200px;*/
             }    
 
@@ -68,169 +230,20 @@
                 height:400px;
             }
 
-
-            .declaracion {
-                padding: 10px;
-                margin-top:25px;
-                margin-left:20px;
-                margin-right:20px;
-                background-color:white;
-                width:45%;
-                min-height:115px;
-            }
-
             #objetivos {
                 float:right;
             }
 
-            .proyecto {
-                margin:15px;
-                padding:10px;
-                background-color:rgb(255,255,240);
-                font-size:12px;
-                clear:both;
-            }
-
-            
-            .img-portada {
-                object-fit: cover;
-                width:100%;
-                height:400px;
-                /*margin:0px;*/
-                margin-left:0px;
-                margin-right:0px;
-                padding:0px;
-            }
-  
-            .intro-proyecto {
-                margin:0px;
-                /*margin-top:500px;*/
-                padding:0px;
-                background-color:rgb(255,255,240);
-            }
-            
-          
-            .lista-proyecto {
-                background-color:rgb(255,255,240);
-                margin:0px;
-                padding:0px;
-                font-size:15px;
-            }
-            
-            .resenas {
-                background-color:rgb(255,230,255);
-                /*margin:0px;*/
-                padding:0px;
-                /*padding-top:20px;*/  
-                /*padding-bottom:20px;*/
-                font-size:15px;
-                width:90%;
-                margin:auto;
-            }
-            
-             .recuadro-proyecto {
-                background-color:rgb(20,250,160);
-                margin:0px;
-                padding:0px;  
-                font-size:15px;
-            } 
-            
-            .rsn-pelicula {
-                background-color:rgb(230,230,230);
-                /*float:left;
-                width:300px;                
-                height:500px;
-                overflow-y:auto;*/ 
-                min-height:300px;              
-                clear:both;     
-                margin:0px;        
-                margin-top:40px;
-                margin-bottom:40px;
-                padding:1px;
-                font-size:15px;
-            }
-            
-            .img-pelicula {
-                /*width:90%;*/
-                float:left;
-                /*width:30%;*/
-                /*height:200px;*/
-                object-fit:cover;
-                max-height:200px;
-                max-width:300px;
-                margin:10px;
-                padding:0px;
-                background-color:rgb(180,180,60);
-                
-            }
-
-
-            h1 {
-                color:rgb(180,0,0);
-                background-color:rgb(255,230,230);
-                margin:0px;
-                padding:10px;
-                text-align:center;
-                font-size:25px;
-            }
-            
-            h2 {
-                color:rgb(120,0,0);
-                background-color:rgb(255,230,230);
-                font-size:20px;
-                margin:0px;
-                padding:5px;
-            }
-            
-            h3 {
-                color:rgb(120, 0, 0);
-                margin:5px;
-                padding:0px;
-                font-size:15px;
-            }  
-            
-            h5 {
-                margin:5px;
-                padding:0px;
-                color:rgb(120,0,0);
-                font-size:13px;
-            }
-
-            
-            p {
-                color:rgb(40, 40, 40);
-                text-align: justify;
-                padding:10px;
-                margin:0px;
-                font-size:15px;
-            }
-            
-            li {
-                color:rgb(40, 40, 40);
-                margin:0px;
-                padding-right:10px;   
-                font-size:15px;
-                text-align:justify;
-            }
-            
-            .pie-foto {
-                font-size: 10px;
-                color:rgb(90, 40, 40);
-                margin:0px;
-                padding:0px;
-            }
 
             #pie-pagina {
                 text-align:center;
-                font-size:12px;
+                font-size:15px;
                 background-color:black;
                 color:rgb(100,80,80);
                 padding:15px;
                 clear:both;
             }
-            a {
-                color:none;
-            }
+
             #futuro {
                 padding: 40px;                
                 width:100%;
@@ -240,6 +253,7 @@
                 align-content:center;
             }
         </style>
+
     </head>
     <body>
 
@@ -264,7 +278,7 @@
                  
                   
                          
-                <div class="declaracion" id="objetivos">
+                <div class="cuadro" id="objetivos">
                     <h3 id="objetivos">Nuestros objetivos</h3>
                     <p>
                         <ul>
@@ -276,12 +290,12 @@
                         </ul>
                     </p>
                 </div>
-                <div class="declaracion" id="mision">
+                <div class="cuadro" id="mision">
                     <h3 id="mision">Nuestra misión</h3>
                     <p>Propiciar encuentros que promuevan el estudio, la reflexión  y la divulgación del conocimiento, alrededor del séptimo arte, aportando al crecimiento de la  cinefilia, a través de la apreciación, la investigación, la crítica, la formación de públicos y la realización de material audiovisual.</p>
                 </div>
 
-                <div class="declaracion" id="vision">             
+                <div class="cuadro" id="vision">             
                     <h3 id="vision">Nuestra visión</h3>
                     <p>Para el año 2025 seremos un colectivo  líder a nivel nacional en el séptimo arte, en los campos de apreciación, divulgación, investigación,  formación  y proyección a la realización cinematográfica.</p>
                 </div>  
@@ -290,8 +304,8 @@
         </div>        
 
 
-        <div class="proyecto">
-            <div class="intro-proyecto">
+        <div class="marco-completo">
+            <div class="marco-completo">
                 <h1 id="pry-capas">Capas, sangre y colmillos</h1> 
                 <img class="img-portada" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bela_lugosi_dracula.jpg/640px-Bela_lugosi_dracula.jpg"><br>
                 <h2>Introducción</h2>
@@ -304,7 +318,7 @@
 
 
 
-            <div class="lista-proyecto">
+            <div class="lista">
                 <h2>Películas</h2>
                     <ul>
                         <li><a href="#nosferatu">Nosferatu</a></li>
@@ -326,14 +340,14 @@
             </div>
 
 
-            <div class="resenas">
+            <div class="marco-reducido">
                 <span class="recuadro-proyecto">
                     <div class="rsn-pelicula">        
                         <h3 id="nosferatu">Nosferatu</h3>
                         <h5>Año: 1922</h5>
                         <h5>Director: Friedrich Wilhelm Murnau</h5>                       <h5>País: Alemania</h5> 
         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Wismar_Heilig_Geist_Hof_Nosferatu_01.jpg">
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Wismar_Heilig_Geist_Hof_Nosferatu_01.jpg">
         
                         <p class="pie-foto">Poster de Nosferatu. <em>Fuente: Wikipedia</em></p>
         
@@ -352,7 +366,7 @@
                         <h5>Año: 1931</h5>
                         <h5>Director: Tod Browning</h5>                                   <h5>País: Estados Unidos</h5> 
         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Dracula_movie_poster_Style_F.jpg/320px-Dracula_movie_poster_Style_F.jpg">
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Dracula_movie_poster_Style_F.jpg/320px-Dracula_movie_poster_Style_F.jpg">
                 
                         <p class="pie-foto">Poster de Drácula (1931). <em>Fuente: Wikipedia</em></p>                
         
@@ -369,7 +383,7 @@
                         <h5>Año: 1943</h5>
                         <h5>Director: Friedrich Wilhelm Murnau</h5>                       <h5>País: Estados Unidos</h5> 
         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Draculas_Sohn_Logo.png">
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Draculas_Sohn_Logo.png">
         
                         <p class="pie-foto">Poster de El hijo de Drácula. <em>Fuente: Wikipedia</em></p>        
         
@@ -386,7 +400,7 @@
                         <h5>Año: 1945</h5>
                         <h5>Director: Erle C. Kenton</h5>                      <h5>País: Estados Unidos</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/HouseOfDracula001.jpg"> 
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/HouseOfDracula001.jpg"> 
                         
                         <p class="pie-foto">Poster de La casa de Drácula. <em>Fuente: Wikipedia</em></p>        
                         
@@ -404,7 +418,7 @@
                         <h5>Director: Fernando Méndez</h5>
                         <h5>País: México</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Abel_Salazar.png/220px-Abel_Salazar.png">     
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Abel_Salazar.png/220px-Abel_Salazar.png">     
                         
                         <p class="pie-foto">Abel Salazar, actor que interpreta a Drácula en El Vampiro. <em>Fuente: Wikipedia</em></p>
                         
@@ -423,7 +437,7 @@
                         <h5>Director: Terence Fisher</h5>
                         <h5>País: Reino Unido</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Dracula_1958_c.jpg/800px-Dracula_1958_c.jpg">         
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Dracula_1958_c.jpg/800px-Dracula_1958_c.jpg">         
                 
                         <p class="pie-foto">Christopher Lee en Drácula (1958). <em>Fuente: Wikipedia</em></p>
                         
@@ -440,7 +454,7 @@
                         <h5>Año: 1967</h5>
                         <h5>Director: Roman Polanski</h5>                      <h5>País: Alemania</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Roman_Polanski_C%C3%A9sars_2011.jpg">   
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Roman_Polanski_C%C3%A9sars_2011.jpg">   
                         
                         <p class="pie-foto">Roman Polanski, director de La danza de los vampiros. <em>Fuente: Wikipedia</em></p>
                         
@@ -459,7 +473,7 @@
                         <h5>Año: 1971</h5>
                         <h5>Director: Michio Yamamoto</h5>                     <h5>País: Japón</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Bram_Stoker_photogravure_by_Downey_%28cropped%29.jpg">
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Bram_Stoker_photogravure_by_Downey_%28cropped%29.jpg">
                         
                         <p class="pie-foto">Abraham Stoker, autor de la célebre novela Drácula. <em>Fuente: Wikipedia</em></p>
                         
@@ -479,7 +493,7 @@
                         <h5>Director: Tobe Hooper</h5>
                         <h5>País: Estados Unidos</h5>
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Stephen_King_-_2011.jpg/1280px-Stephen_King_-_2011.jpg">  
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Stephen_King_-_2011.jpg/1280px-Stephen_King_-_2011.jpg">  
                         
                         <p class="pie-foto">Stephen King, autor del libro El misterio de Salem's lot. <em>Fuente: Wikipedia</em></p>
                         
@@ -500,7 +514,7 @@
                         <h5>Director: Werner Herzog</h5>
                         <h5>País: Alemania Occidental</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Klaus_Kinski_Cannes-%28retouched%29.jpg">
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Klaus_Kinski_Cannes-%28retouched%29.jpg">
                         
                         <p class="pie-foto">Klaus Kinski, actor que encarna a Nosferatu en la película de Herzog. <em>Fuente: Wikipedia</em></p>
                         
@@ -532,7 +546,7 @@
                         <h5>Director: Juan Padrón</h5>
                         <h5>País: Cuba, España, Alemania Occidental</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/b/be/L%C3%ADnea%2C_La_Habana%2C_Cuba.jpg"> 
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/b/be/L%C3%ADnea%2C_La_Habana%2C_Cuba.jpg"> 
                 
                         <p class="pie-foto">La Habana, Cuba, escenario ficticio de la película de Juan Padrón. <em>Fuente: Wikipedia</em></p>
                         
@@ -549,7 +563,7 @@
                         <h5>Año: 1992</h5>
                         <h5>Director: Francis Ford Coppola</h5>                <h5>País: Estados Unidos</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Bram_Stoker%27s_Dracula_movie_horizontal_gold_logo.png">   
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Bram_Stoker%27s_Dracula_movie_horizontal_gold_logo.png">   
                         
                         <p class="pie-foto">Imagen promocional de Drácula de Bram Stoker. <em>Fuente: Wikipedia</em></p>
                         
@@ -569,7 +583,7 @@
                         <h5>Director: E. Elias Merhige</h5>
                         <h5>País: Reino Unido, Estados Unidos, Luxemburgo</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Willem_Dafoe_2014_%28cropped%29.jpg"> 
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Willem_Dafoe_2014_%28cropped%29.jpg"> 
                         
                         <p class="pie-foto">Willem Dafoe, actor que encarna a Max Schrek en La sombra del vampiro. <em>Fuente: Wikipedia</em></p>
                         
@@ -597,7 +611,7 @@
                         <h5>Director: Guy Maddin</h5>
                         <h5>País: Alemania</h5> 
                         
-                        <img class="img-pelicula" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Dracula_-_Pages_from_a_Virgin%27s_Diary.jpg"> 
+                        <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Dracula_-_Pages_from_a_Virgin%27s_Diary.jpg"> 
                         
                         <p class="pie-foto">Poster de Drácula, páginas del diario de una virgen. <em>Fuente: Wikipedia</em></p>
                         
@@ -616,7 +630,7 @@
                         <h5>Director: Dario Argento</h5>
                         <h5>País: Italia, Francia, España</h5> 
                         
-                        <img class="img-pelicula"
+                        <img class="img-resena"
                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Argento_2012_2.jpg/800px-Argento_2012_2.jpg"> 
                         
                         <p class="pie-foto">Dario Argento y su hija Asia Argento. <em>Fuente: Wikipedia</em></p>
