@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cinEncuadre</title>
+        <!--<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/cinencuadre/cinencuadre.github.io/master/style.css">-->
+        <style>
+
+            <!---->
+            body {
+                background-color:rgb(255, 255, 255);
+                font-family:"Optima", sans-serif;
+                /*margin:0px;*/
+                /*padding:0px;*/
+                /*width:100%;*/
+            }
+
+
+            h1 {
+                color:rgb(180,0,0);
+                background-color:rgb(255,120,255);
+                /*margin:0px;*/
+                /*padding:10px;*/
+                text-align:center;
+                font-size:30px;
+            }
+
+
+            h2 {
+                color:rgb(120,0,0);
+                background-color:rgb(60,110,190);
+                font-size:25px;
+                /*margin:0px;*/
+                /*padding:10px;*/
+            }
+
+
+            h3 {
+                color:rgb(120, 0, 0);
+                /*margin:0px;*/
+                /*padding:10px;*/
+                font-size:20px;
+                background-color: chartreuse;
+            }  
+
+
+            h5 {
+                /*margin:5px;*/
+                /*padding:5px;*/
+                color:rgb(120,0,0);
+                font-size:13px;
+                background-color: darkorange;
+            }
+
+
+            p {
+                color:rgb(40, 40, 40);
+                text-align: justify;
+                /*padding:15px;*/
+                /*padding-top:15px;*/
+                /*padding-bottom:15px;*/
+                /*margin:0px;*/
+                /*padding-left: ;/
+                font-size:18px;
+                background-color: rgb(180,180,40);
+            }
+
+
+            li {
+                color:rgb(40, 40, 40);
+                /*margin:0px;*/
+                /*padding:5px;*/
+                font-size:18px;
+                text-align:justify;
+                background-color: deepskyblue;
+            }
+
+
+            a {
+                background-color: firebrick;
+            }
+
+            img, object, video, embed, iframe {
+                max-width:100%;
+                background-color: indianred;
+            }
+
+            .cuadro {
+                /*padding: 10px;*/
+                /*margin-top:25px;*/
+                /*margin-left:20px;*/
+                /*margin-right:20px;*/
+                /*margin-bottom:25px;*/
+                background-color:rgb(226, 198, 43);
+                /*width:90%;*/
+                font-size:18px;
+            }
+
+
+            .img-portada {
+                /*object-fit: cover;*/
+                width:100%;
+                /*height:400px;*/
+                /*margin:0px;*/
+                /*margin-left:0px;*/
+                /*margin-right:0px;*/
+                /*padding:0px;*/
+                background-color: gold;
+            }
+
+            .marco-completo {
+                /*margin:0px;*/
+                /*margin-top:0px;*/
+                /*padding:0px;*/
+                background-color:rgb(130,180,130);
+                /*width:100%;*/
+               
+            }
+
+
+            .marco-reducido {
+                background-color:rgb(145,115,225);
+                /*margin:0px;*/
+                /*padding:10px;*/
+                /*padding-top:20px;*/  
+                /*padding-bottom:20px;*/
+                font-size:18px;
+                /*width:90%;*/
+                /*margin:auto;*/
+                /*margin-top:0px;*/
+                /*margin-bottom:0px;*/
+
+
+            }
+
+
+            .rsn-pelicula {
+                background-color:rgb(250,250,220);
+                /*float:left;
+                width:300px;                
+                height:500px;
+                overflow-y:auto;*/ 
+                /*min-height:300px;*/           
+                /*margin:0px;*/       
+                /*margin-top:40px;*/
+                /*margin-bottom:40px;*/
+                /*min-height: 400px;*/
+                /*padding:15px;*/
+                font-size:18px;
+            }
+
+
+            .img-resena {
+                /*object-fit:cover;*/
+                width:100%;
+                /*max-width:80%;*/
+                /*max-height:690px;*/
+                /*margin:auto;*/
+                /*margin-top:10px;
+                margin-bottom:10px;*/
+                /*padding:0px;*/
+                background-color:rgb(120,120,120);
+                
+            }
+
+
+            .pie-foto {
+                font-size: 15px;
+                color:rgb(90, 40, 40);
+                /*margin:0px;*/
+                /*padding:0px;*/
+                /*font-weight:bold;*/
+                background-color:hotpink;
+            }
+
+            .video-youtube {
+                width:100%;
+                height:auto;
+            }
+
+            #banda-superior {
+
+                /*height:100px;*/
+                /*padding:10px;*/
+
+                /*position:fixed;*/
+                /*top:0px;*/
+                /*left:0px;*/
+                /*width:100%;*/
+                background-color:rgb(50, 161, 205);
+                /*text-align:center;*/
+                /*z-index:1;*/
+            }
+
+            #logo {
+                /*object-fit:cover;*/
+                width:100%;
+                /*max-width:300px;*/   
+                /*height:100%;*/
+                background-color:yellow;
+                /*margin:0px;*/
+                /*padding:10px;
+                /*margin-left:180px;*/
+                /*margin-left:50%;*/
+            }
+
+
+            #logo-redes {
+                /*float:right;*/
+                background-color:rgb(220,70,70);
+                /*margin-top:100px;*/
+                /*vertical-align: middle;*/
+                /*align-items:center;*/
+                /*width:250px;*/
+                /*width:100%;*/
+                /*padding:10px;*/
+            }
+
+
+            #siguenos {
+                /*text-align:right;*/
+                /*vertical-align:middle;*/
+                /*padding:15px;*/
+                /*line-height:50px;*/
+                font-size:18px;
+                /*width: 200px;*/
+                background-color:rgb(70,220,70)
+            }    
+
+                        
+            #logo-instagram {
+                /*float:right;*/
+                /*height:50px;*/               
+                /* margin:10px;*/
+                /*width:20px;*/
+                background-color: rgb(70,70,200);
+            }   
+
+            #recuadro-declaracion {
+                background-color:orange;
+                /*height:500px;*/
+                /*padding:10px;*/
+                /*padding-bottom:30px;*/
+                /*height:400px;*/
+            }
+
+
+            #futuro {
+                /*padding: 40px;*/            
+                /*width:100%;*/
+                /*height:405px;*/
+                background-color:rgb(255,230,230);
+            }
+
+            #pie-pagina {
+
+                font-size:15px;
+                background-color:gainsboro;
+                color:rgb(100,80,80);
+                /*padding:18px;*/
+                /*width:100%;*/
+                /*text-align:center;*/
+            }
+
+            #pie-pagina p {
+                text-align:center;
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+        
+        <div id="banda-superior">
+
+            <img id="logo" src="https://raw.githubusercontent.com/cinencuadre/cinencuadre.github.io/master/Logo_crop.png"> 
+
+        </div>
+
+        <div id="logo-redes">
+                <p id="siguenos">
+                    <a href="https://www.instagram.com/cinencuadrecolectivo/?hl=es-la">Síguenos en Instagram:</a>                
+                    <img id="logo-instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/240px-Instagram_logo_2016.svg.png">   
+                </p>          
+     
+        </div>  
+
+        <div id="quienes-somos" class="marco-reducido">
+            <h1>¿Quiénes somos?</h1>
+
+
+
+            <div class="cuadro" id="mision">
+                <h3 id="mision">Nuestra misión</h3>
+                <p>Propiciar encuentros que promuevan el estudio, la reflexión  y la divulgación del conocimiento, alrededor del séptimo arte, aportando al crecimiento de la  cinefilia, a través de la apreciación, la investigación, la crítica, la formación de públicos y la realización de material audiovisual.</p>
+            </div>
+
+            <div class="cuadro" id="vision">             
+                <h3 id="vision">Nuestra visión</h3>
+                <p>Para el año 2025 seremos un colectivo  líder a nivel nacional en el séptimo arte, en los campos de apreciación, divulgación, investigación,  formación  y proyección a la realización cinematográfica.</p>
+            </div>                 
+                  
+                         
+                <div class="cuadro" id="objetivos">
+                    <h3 id="objetivos">Nuestros objetivos</h3>
+                    <p>
+                        <ul>
+                            <li>Generar espacios para la investigación, reflexión, debate y generación de conocimiento en torno al arte cinematográfico.</li>
+                            <li>Contribuir a la divulgación del cine en nuestra ciudad y su área metropolitana a través de la programación de cineclubes, maratones, muestras y festivales de cine.</li>
+                            <li>Contribuir a la formación de públicos a través de la participación y organización de foros, charlas, conversatorios, seminarios y cursos relacionados con el cine.</li>
+                            <li>Generar canales de comunicación digitales para acercar a los públicos contemporáneos a un interés por el arte cinematográfico, aprovechando para ello los medios digitales, las redes sociales, la virtualidad y en general las nuevas tecnologías.</li>
+                            <li>Contribuir a la reflexión sobre las películas y sobre el arte cinematográfico por medio de la publicación de reseñas, críticas, artículos y productos audiovisuales inspirados en el cine.</li>
+                        </ul>
+                    </p>
+                </div>
+        </div>        
+
+
+        <div class="marco-completo">
+            <div class="marco-completo">
+                <h1 id="pry-capas">Capas, sangre y colmillos</h1> 
+                <img class="img-portada" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bela_lugosi_dracula.jpg/640px-Bela_lugosi_dracula.jpg"><br>
+                <h2>Introducción</h2>
+                <p>Desde la aparición en la literatura del vampiro, los terroríficos relatos en las veladas góticas del siglo XVIII, y pasando por la novela descriptiva del tenebroso conde Drácula en la obra de Bram
+                    Stoker hasta nuestros días, las capas, los colmillos y la sangre han llenado de pánico nuestra imaginación y el cine en sus 123 años no ha sido ajeno a este fenómeno.
+                    Con esta muestra pretendemos hacer un recorrido audiovisual por los más siniestros, terroríficos o traídos de los cabellos vampiros y Dráculas llevados majestuosamente a la pantalla
+                    gigante. La muestra "Capas, sangre y colmillos" fue realizada en el marco de la Segunda Muestra de Cine Fantástico y de Terror Fantasmagoría.</p>
+        
+            </div>
+
+
+
+            <div class="marco-completo">
+                <h2>Películas</h2>
+                    <ul>
+                        <li><a href="#nosferatu">Nosferatu</a></li>
+                        <li><a href="#dracula1931">Drácula (1931)</a></li>
+                        <li><a href="#son-of-dracula">El hijo de Drácula</a></li>            
+                        <li><a href="#house-of-dracula">La casa de Drácula</a></li>            
+                        <li><a href="#el-vampiro">El vampiro</a></li>            
+                        <li><a href="#dracula1958">Drácula (1958)</a></li>            
+                        <li><a href="#dance-of-the-vampires">La danza de los vampiros</a></li>            
+                        <li><a href="#lake-of-dracula">El lago de Drácula</a></li>            
+                        <li><a href="#salems-lot">Salem's lot</a></li>            
+                        <li><a href="#nosferatu1979">Nosferatu, el vampiro de la noche</a></li>            
+                        <li><a href="#vampiros-en-la-habana">Vampiros en La Habana</a></li>            
+                        <li><a href="#bram-stokers-dracula">Drácula de Bram Stoker</a></li>
+                        <li><a href="#shadow-of-the-vampire">La sombra del vampiro</a></li>
+                        <li><a href="#dracula-pages-from-a-virgins-diary">Drácula, páginas del diario de una virgen</a></li>
+                        <li><a href="#dracula-3d">Drácula 3D</a></li>         
+                </ul> <br>
+            </div>
+
+
+            <div class="marco-reducido">
+     
+                <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Wismar_Heilig_Geist_Hof_Nosferatu_01.jpg">
+    
+                <p class="pie-foto">Poster de Nosferatu. <em>Fuente: Wikipedia</em></p>
+              
+                <div class="rsn-pelicula">        
+                    <h3 id="nosferatu">Nosferatu</h3>
+                    <h5>Año: 1922</h5>
+                    <h5>Director: Friedrich Wilhelm Murnau</h5>                       <h5>País: Alemania</h5> 
+ 
+                    <p>Primera película de la historia que quiso llevar a la pantalla gigante la famosa novela de Bram Stoker y su personaje homónimo: Drácula. Sin embargo, no fue basada fielmente en el libro original sino adaptada por Henrik Galeen en una versión libre y luego traducida a imágenes en movimiento gracias al ingenio de Murnau.</p>
+                    <p> Hija directa del Expresionismo Alemán, esta cinta es tan oscura (en cuanto al uso de sombras, fundidos a iris y lúgubres escenarios) como las espeluznantes intenciones de su villano protagonista: el Conde de Orlok, también llamado, Nosferatu. Este monstruoso ser, salido de las cavernas del averno, es un vampiro que necesita revitalizarse con la sangre de una doncella.</p> 
+                    <p> Escena por escena, el realizador de origen alemán nos conduce tanto por el castillo del conde (incluyendo la tumba donde este duerme) como a través de diversos lugares que ambientan, de un modo sobrecogedor, la trama y las intenciones que dicho ser del inframundo tiene para lograr su cometido.</p>
+                    <p>A pesar de lo recargado del maquillaje de los personajes y la sobre actuación de los mismos (ambos requisitos indispensables para el cine del periodo mudo) o gracias a estos y a otros tantos elementos -como los mencionados anteriormente- es que esta obra sigue siendo un gran referente para el género del terror y el universo de los chupasangre.</p>
+    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>
+                </div>
+
+
+    
+                <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Dracula_movie_poster_Style_F.jpg/320px-Dracula_movie_poster_Style_F.jpg">
+            
+                <p class="pie-foto">Poster de Drácula (1931). <em>Fuente: Wikipedia</em></p>                
+   
+                <div class="rsn-pelicula">         
+                    <h3 id="dracula1931">Drácula (1931)</h3>
+                    <h5>Año: 1931</h5>
+                    <h5>Director: Tod Browning</h5>                                   <h5>País: Estados Unidos</h5> 
+ 
+                    <p>El actor austro-húngaro Bela Lugosi ya había encarnado a Drácula en el teatro de Broadway, y fue el encargado de representarlo en la película de Tod Browning de 1931. Fue uno de los primeros grandes éxitos del ciclo de terror de Universal Pictures, y Lugosi quedó vinculado para siempre a la imagen de Drácula, al punto de que al morir su cadáver fue sepultado con el atuendo del famoso conde.</p> 
+                    <p>El Drácula que encarna Lugosi es refinado y enigmático; el terror que genera no procede de una violencia explícita, sino de su presencia lúgubre y misteriosa. En la película el uso del sonido es parco y el estilo de representación es por momentos claramente teatral. La atmósfera gótica es recreada con maestría por el director, especialmente en el castillo de Drácula y la ruta que lleva hacia él.</p>
+    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>
+                </div>
+
+
+    
+                <div class="rsn-pelicula"> 
+                    <h3 id="son-of-dracula">El hijo de Drácula</h3>
+                    <h5>Año: 1943</h5>
+                    <h5>Director: Friedrich Wilhelm Murnau</h5>                       <h5>País: Estados Unidos</h5> 
+    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Draculas_Sohn_Logo.png">
+    
+                    <p class="pie-foto">Poster de El hijo de Drácula. <em>Fuente: Wikipedia</em></p>        
+    
+                    <p>Lon Chaney Jr., el hijo del famoso actor del periodo mudo Lon Chaney, “el hombre de las mil caras”, se hizo su propio lugar en el cine de horror de Universal Pictures gracias a su interpretación del hombre-lobo en la película de 1941. Posteriormente encarnaría a Frankenstein, a la Momia y a Drácula, a este último en 1943, en la película de Robert Siodmak <em>El hijo de Drácula</em> (<em>Son of Drácula</em>, 1943).</p>
+                    <p><em>El hijo de Drácula</em> es una novedosa adaptación de la novela de Stoker que se desarrolla en el siglo XX, en algún lugar de Nueva Orleans, en los Estados Unidos. El conde, quien se hace llamar Alucard -lo cual no es más que un anagrama de su nombre verdadero- seduce y desposa a Katherine Caldwell, quien está comprometida con Frank Stanley; ambos resultan equivalentes de la pareja Harker de la novela. Pero a continuación ocurre una vuelta de tuerca cuando nos enteramos de las verdaderas intenciones de Katherine.</p>
+    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>        
+                </div>
+
+
+
+                <div class="rsn-pelicula">         
+                    <h3 id="house-of-dracula">La casa de Drácula</h3>
+                    <h5>Año: 1945</h5>
+                    <h5>Director: Erle C. Kenton</h5>                      <h5>País: Estados Unidos</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/HouseOfDracula001.jpg"> 
+                    
+                    <p class="pie-foto">Poster de La casa de Drácula. <em>Fuente: Wikipedia</em></p>        
+                    
+                    <p>Desde 1922 la pantalla gigante se ha visto inundada por capas, sangre y colmillos, cuando Drácula saltó de la literatura y pasó a ser protagonista de un sin número de películas donde el siniestro personaje, que surgido de la novela escrita por el irlandés Bram Stoker, en 1897 aterró a grandes y chicos volviendo mítica la historia basada en el principe de Valquiria, Vlad Tepes.</p>
+                    <p>Desde sus inicios en el cine hasta nuestros días, el vampiro ha sido  causante de amores y odios sin dejar de estar en las retinas de  los espectadores. En los años 40, La Universal Studios pensó que un solo ser macabro no era suficiente y dió a luz lo que podríamos denominar la secuela de los monstruos con films como: <em>La mansión de Drácula</em> (1945), <em>House of Frankenstein</em> (1944) y <em>Abbott and Costello Meet Frankenstein</em> (1948). Terroríficos para algunos, dignos clásicos para otros o un puñado más de películas acerca de Drácula para tantos más, esta trilogía es digna de ser apreciada y recordada.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p> 
+                </div>
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="el-vampiro">El vampiro</h3>
+                    <h5>Año: 1957</h5>
+                    <h5>Director: Fernando Méndez</h5>
+                    <h5>País: México</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Abel_Salazar.png/220px-Abel_Salazar.png">     
+                    
+                    <p class="pie-foto">Abel Salazar, actor que interpreta a Drácula en El Vampiro. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>Película protagonizada por Abel Salazar, Ariadne Welter, Carmen Montejo y Germán Robles. Ocupa el puesto 35 en la lista de las 100 mejores películas mexicanas de todos los tiempos elaborada por la revista Somos, y hace parte de la llamada "Época de oro del cine Mexicano". Fue tanto el éxito del film que pronto se hizo su secuela <em>El ataúd del vampiro</em>. Robles, quien le da vida al vampiro, destaca no solo por su excelente actuación sino por sus características físicas que lo hacían un verdadero chupasangre.</p>
+                    <p>Argumentalmente <em>El Vampiro</em> desarrolla los entresijos de una trama familiar en la que Marta (Ariadne Welter), una atractiva joven, va de visita donde su tía enferma; en el tren se cruza con Enrique (Abel Salazar), un pasajero que resulta ser médico. Ante el inconveniente de continuar el viaje hasta la hacienda de su tía, Enrique se ofrece a acompañarla en una vieja carreta que transporta una misteriosa caja enviada desde Hungría. Cuando Marta llega finalmente a la hacienda se encuentra con un escenario sombrío completamente diferente a la casa de ensueño que recordaba, allí descubre que su tía ha muerto y que hay vampiros que acechan la zona; el principal de ellos es el Conde Lavud quien además de su sed de sangre busca apoderarse de las tierras de la hacienda y prepara la llegada del vampiro inmortal, Christopher Lee.</p>
+                    <p>Esta es una película creativa e ingeniosa que apela a los elementos propios del cine gótico y de vampiros: la fantasía y una escenografía espeluznante que se apoya en unos efectos visuales magníficos para la época, combinados con algo de humor (mal insertado a veces), y misterio, que hacen de esta una película insigne del cine de vampiros en Hispanoamérica.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p> 
+                </div>
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="dracula1958">Drácula (1958)</h3>
+                    <h5>Año: 1958</h5>
+                    <h5>Director: Terence Fisher</h5>
+                    <h5>País: Reino Unido</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Dracula_1958_c.jpg/800px-Dracula_1958_c.jpg">         
+            
+                    <p class="pie-foto">Christopher Lee en Drácula (1958). <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>Christopher Lee interpretó probablemente el Drácula más famoso de la historia del cine. La fuerza que imprimió al personaje del conde Drácula contribuyó indiscutiblemente al éxito de las producciones de la Hammer relacionadas con el vampiro, que terminaron constituyendo toda una saga. La estatura de Lee, su presencia imponente y la fiereza de sus rasgos contribuyeron a que caracterizara a uno de los Dráculas que mejor refleja el carácter monstruoso y terrorífico del conde de la novela.</p>
+                    <p>La primera aparición de Drácula en la película en un primer plano, con los ojos inyectados de sangre y la boca aún empapada del mismo fluido, anuncia el carácter terrible e implacable que exhibirá el personaje a lo largo de la película. Las incursiones de Drácula en los aposentos de las mujeres a quienes rapta, están llenas de intimidación y de una violencia latente. Lee se muestra agresivo y urgente; su irrupción sugiere la brutalidad de la violación.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>         
+                </div>
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="dance-of-the-vampires">La danza de los vampiros</h3>
+                    <h5>Año: 1967</h5>
+                    <h5>Director: Roman Polanski</h5>                      <h5>País: Alemania</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Roman_Polanski_C%C3%A9sars_2011.jpg">   
+                    
+                    <p class="pie-foto">Roman Polanski, director de La danza de los vampiros. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>El baile de los vampiros es  la primera película en color del director polaco​ de origen judío y nacido en Francia en donde el también actúa.</p>
+                    <p>La comedia aunque es la continuación de un camino ya iniciado en los años 50  y que había emprendido y dado reconocimiento a la famosa productora hammer esta vez Polanski lo centro en un ambiente Gótico, muy trágico pero principalmente cómico para demostrarnos que El vampiro también nos puede hacer reír y provocar no una risa desprevenida sino una respuesta a la estructura inteligente de un guión hecho para tal fin.</p>
+                    <p>Esta producción con apariencia gótica, llena de colorido, música y sensualidad no carece de elementos narrativos que permitan volverla simple o sosa, por el contrario es una comedia inteligente bellamente realizada que puede dibujar una sonrisa hasta en el más escéptico de los espectadores.
+            </p>
+            
+                    <p><a href="#pry-capas">Volver al Índice</a></p> 
+                </div>
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="lake-of-dracula">El lago de Drácula</h3>
+                    <h5>Año: 1971</h5>
+                    <h5>Director: Michio Yamamoto</h5>                     <h5>País: Japón</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Bram_Stoker_photogravure_by_Downey_%28cropped%29.jpg">
+                    
+                    <p class="pie-foto">Abraham Stoker, autor de la célebre novela Drácula. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>Hace ya  más de  50 años que el cine de terror ocupa los primeros lugares de  preferencia entre el público japonés.</p> 
+                    <p>A principios de  los años 70 y abriendo así un camino a lo que seria un símil a la mítica productora “Hammer”  Japón incursióna en lo que podríamos llamar el fenómeno  J-Horror  que hasta estos días ha llenado de pánico las salas de cine a nivel mundial.</p> 
+                    <p>Y si de J-Horror se trata tendremos que hablar del director Michio Yamamoto quién se  encargo de realizar la trilogía del vampiro iniciando con <em>Vampire Doll</em> (1970) luego realizó <em>Lake of Dracula</em> (1971) y cerró la trilogía con <em>Evil of Dracula</em> (1974) este ejercicio  cinematográfico lleva al vampiro a la cultura y narrativa de terror nipona pero  deja a un lado el folclorismo propio, y explora aspectos visuales y mitológicos  de origen occidentales.</p>
+                    <p>Es así como paradójicamente  podemos ver un hombre vampiro de origen japonés, pero de nombre Dracula.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p> 
+                </div>
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="salems-lot">El misterio de Salem's lot</h3>
+                    <h5>Año: 1979</h5>
+                    <h5>Director: Tobe Hooper</h5>
+                    <h5>País: Estados Unidos</h5>
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Stephen_King_-_2011.jpg/1280px-Stephen_King_-_2011.jpg">  
+                    
+                    <p class="pie-foto">Stephen King, autor del libro El misterio de Salem's lot. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>En un pueblo tranquilo y apasible  donde nunca pasaba nada extraordinario, ahora los niños empezaron a desaparecer, hay animales muertos por doquier.</p>
+                    <p>El hombre vampiro salió de la literatura y los cines  y se adentro en todas las casas a través de la pantalla chica.</p>
+                    <p>Esta miniserie realizada para televisión esta dividida en 4 capítulos de una duración total de 183 minutos y Basada en la segunda novela del escritor estadounidense Stephen King, publicada en 1975. Bajó el nombre de <em>Salem's Lot</em>.</p>
+                    <p>La miniserie llenó de terror los hogares a finales de  la década de los 70's  e inspiró películas de terror como <em>Fright Night</em> (1985)  <em>The Lost Boys</em> (1987) y la exitosa serie de televisión de <em>Buffy the Vampire Slayer</em>, Entre muchas otras.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>
+                
+                </div>
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="nosferatu1979">Nosferatu, el fantasma de la noche</h3>
+                    <h5>Año: 1979</h5>
+                    <h5>Director: Werner Herzog</h5>
+                    <h5>País: Alemania Occidental</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Klaus_Kinski_Cannes-%28retouched%29.jpg">
+                    
+                    <p class="pie-foto">Klaus Kinski, actor que encarna a Nosferatu en la película de Herzog. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>En el océano de películas que fungen como remakes, pocas son tan avezadas a la hora de ir más allá de su raíz original, tanto en la historia que narran como en la forma en que lo hacen, sin dejar de partir del argumento en que están soportadas.</p>
+                    <p>En el caso de esta nueva versión del vampiro inaugural del cine, Herzog se enfoca más en el personaje del conde como un ser existencialista que como un vil y sanguinario monstruo (interpretado por el indomable Klaus Kinski), al poner en boca de este el siguiente texto: “El tiempo es un abismo profundo como mil noches… siglos van y vienen y no poder envejecer es terrible”.</p> 
+                    <p>Y es que el Nuevo cine alemán se caracteriza por cuestionarse acerca de: el alma humana, la cotidianidad, el poetizar y filosofar acerca del sentido de la vida en toda su magnitud.</p>
+                    <p>El filme tiene elementos a través de los cuales construye este personaje con más complejidad que el de la película de Murnau, además de que, a diferencia de la primera (en la que al aristócrata conde era llamado Orlok), aquí se le nombra igual que en la novela de Stoker: Drácula.</p>
+                    <p>Obviamente, el que sea una pieza hablada y a color le da otro significado y matiz frente a su predecesora (muda y en blanco y negro), lo cual no quiere decir que la supere; de hecho, la de Murnau es un referente mundial del séptimo arte; la de Herzog quizá lo sea, pero no en las dimensiones de aquella.</p>
+            
+                    <p>Premios:</p>
+            
+                    <ul>
+                        <li>FESTIVAL INTERNACIONAL DE CINE DE BERLÍN<br>
+                        Oso de plata al Logro único sobresaliente para Henning Van Gierke por Mejor Diseño de producción.</li>
+            
+                        <li>FESTIVAL INTERNACIONAL DE CINE DE CARTAGENA 1980
+                        Pelícano de oro a Klaus Kinski por Mejor actor.</li>   
+                
+                    </ul>
+            
+                    <p><a href="#pry-capas">Volver al Índice</a></p>
+                </div>
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="vampiros-en-la-habana">Vampiros en La Habana</h3>
+                    <h5>Año: 1985</h5>
+                    <h5>Director: Juan Padrón</h5>
+                    <h5>País: Cuba, España, Alemania Occidental</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/b/be/L%C3%ADnea%2C_La_Habana%2C_Cuba.jpg"> 
+            
+                    <p class="pie-foto">La Habana, Cuba, escenario ficticio de la película de Juan Padrón. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>Padrón nos conduce por sitios históricos de la vieja Habana de un modo divertido y atractivo pero no menos crítico,  por medio una forma de hacer de cine que llega fácilmente a todo tipo de público: la animación.</p>
+                    <p>Temas como la mafia, aristocracia, burguesía, dictadura, policía, delincuencia, alcohol, ciencia, pócimas, música cubana, playa, sol, vida nocturna, sexo, prostitución, amor, entre otros, son mezclados con un argumento cargado de situaciones conflictivas (acudiendo a géneros como el terror y el cine negro) aunque atravesadas por el absurdo, la parodia y la sátira característicos de la comedia, lo cual, al ser protagonizado por particulares vampiros y simpáticos humanos, produce un sabroso y caribeño cóctel de imágenes servido para disfrutar de una pieza única tanto para la cinematografía de la isla como de todo Latinoamérica.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>
+                </div>
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="bram-stokers-dracula">Drácula de Bram Stoker</h3>
+                    <h5>Año: 1992</h5>
+                    <h5>Director: Francis Ford Coppola</h5>                <h5>País: Estados Unidos</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Bram_Stoker%27s_Dracula_movie_horizontal_gold_logo.png">   
+                    
+                    <p class="pie-foto">Imagen promocional de Drácula de Bram Stoker. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p><em>Bram Stoker’s Dracula</em> debía ser la adaptación definitiva de la historia del vampiro de la literatura, la más fiel y ambiciosa jamás realizada.</p>
+                    <p>El resultado fue una película épica, majestuosa, visualmente muy estilizada, y con un uso notable del color; en definitiva, una obra de gran belleza pictórica. Abundan en ella el sexo y la sangre, pero el tratamiento refinado que de estos elementos hace Coppola logra que, en lugar de corromper, sumen a la potente estética de la película.</p>
+                    <p>El conde Drácula interpretado por Gary Oldman es, al igual que en la novela, un anciano que rejuvenece gracias al efecto vivificador de la sangre de sus víctimas, rasgo que lo diferencia de la mayoría de los Dráculas de la historia del cine, que han sido caracterizados como relativamente jóvenes, fuertes y vitales. La caracterización del conde Drácula es, de hecho, lo mejor de la película; su semblante glamuroso y decrépito, trágico y siniestro a la vez. La perturbadora imagen de su sombra aparentemente dotada de viva propia -magnífica reminiscencia del cine expresionista- se ha vuelto icónica, objeto de homenajes y parodias.</p>
+                    <p>El horror y el romance tienen partes iguales en la película –<em>Bram Stoker’s Dracula</em> es, básicamente, la historia de un amor imposible que recorre los siglos y traspasa la frontera de la muerte.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>
+                </div> 
+                
+                
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="shadow-of-the-vampire">La sombra del vampiro</h3>
+                    <h5>Año: 2000</h5>
+                    <h5>Director: E. Elias Merhige</h5>
+                    <h5>País: Reino Unido, Estados Unidos, Luxemburgo</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Willem_Dafoe_2014_%28cropped%29.jpg"> 
+                    
+                    <p class="pie-foto">Willem Dafoe, actor que encarna a Max Schrek en La sombra del vampiro. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>Estamos ante una película que para deleite del público pone ante sus retinas el ya trabajado recurso del cine dentro del cine. Este otro Nosferatu, (representado en el marco de la historia por Max Schreck, quien a su vez es encarnado, ya en la realidad, por el actor Willem Dafoe) es un ser más cargado de ansiedad, desconfianza, intenciones y actos retorcidos que los protagonistas de las anteriores versiones <em>Nosferatu. Eine symphonie des grauens</em> (<em>Nosferatu. Sinfonía del horror</em>) (1922) y <em>Nosferatu. Phantom ser Nacht</em>. (<em>Nosferatu. El Fantasma de la noche</em>) (1979).</p>
+                    <p>Pero, quien puede llegar a sobrecogernos, incluso más que el propio Conde Orlok, es el personaje del realizador Murnau (interpretado por John Malkovich): sus acciones son las de un profesional que conoce el oficio, capaz de controlar hasta el último detalle para que todo esté en su sitio; sin embargo, la obsesión de este por rodar las veces que le sea posible y dar por concluido su próximo y vampírico film, lo llevará a límites  insospechados.</p>
+                    <p>Recrear, casi fielmente, los escenarios y personajes de la película original, así como la caracterización y el hipotético y ficcional modo en que transcurrieron los acontecimientos en torno al rodaje de esta obra, convierten a Merhige en un creador de una profunda sagacidad, nada complaciente con el espectador y, al igual que su homenajeado colega alemán, con gran sabiduría y mística a la hora de abordar su rol de director.</p>
+            
+                    <p>Premios:</p>
+            
+                    <ul>
+                        <li>Academy of Sciencie fiction fantasy & horror films USA (2001)<br>
+                        Premio Saturno para Willem Dafoe al Mejor actor de reparto.</li>
+                        <li>Los Ángeles Film critics association awards (2000).<br>
+                        Premio LAFCA a Willem Dafoe al Mejor actor de reparto.</li>    
+                    </ul>
+            
+                    <p><a href="#pry-capas">Volver al Índice</a></p> 
+                </div> 
+            
+            
+                    
+                <div class="rsn-pelicula">         
+                    <h3 id="dracula-pages-from-a-virgins-diary">Drácula, páginas del diario de una virgen</h3>
+                    <h5>Año: 2002</h5>
+                    <h5>Director: Guy Maddin</h5>
+                    <h5>País: Alemania</h5> 
+                    
+                    <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Dracula_-_Pages_from_a_Virgin%27s_Diary.jpg"> 
+                    
+                    <p class="pie-foto">Poster de Drácula, páginas del diario de una virgen. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>Musical, muda, en blanco y negro. Así es la adaptación cinematográfica que hizo Guy Maddin en 2002 de la novela de Abraham Stoker, con la participación del Royal Winnipeg Ballet. Indudablemente es una de las versiones más singulares que se han hecho del clásico de la literatura gótica.</p>
+                    <p>El estilo del director incluye la utilización de planos, encuadres y transiciones del cine mudo clásico. Otro rasgo no menos exótico de la película es la selección del actor y bailarín chino Zhang Wei-Qiang para el papel del conde vampiro.</p>
+                    <p>Significativamente, cuando Drácula es acorralado y una estaca de van Helsing lo atraviesa por la espalda, su cuerpo se iza empalado a la manera en que, según la tradición, el Drácula histórico Vlad Tepes empalaba a sus enemigos.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p> 
+                </div>
+            
+            
+            
+                <div class="rsn-pelicula">         
+                    <h3 id="dracula-3d">Drácula 3D</h3>
+                    <h5>Año: 2012</h5>
+                    <h5>Director: Dario Argento</h5>
+                    <h5>País: Italia, Francia, España</h5> 
+                    
+                    <img class="img-resena"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Argento_2012_2.jpg/800px-Argento_2012_2.jpg"> 
+                    
+                    <p class="pie-foto">Dario Argento y su hija Asia Argento. <em>Fuente: Wikipedia</em></p>
+                    
+                    <p>Dario Argento es una leyenda viva del cine; sus películas de los años 70 son consideradas las obras más representativas del género giallo, que influiría profundamente en el cine de terror de las décadas siguientes. Lejos de los años de sus películas más aclamadas, en 2012 presentó por primera vez una versión de Drácula en formato 3D.</p>
+                    <p>La versión de Drácula del maestro Argento abunda más en sexo y violencia que la mayoría de las adaptaciones cinematográficas que se han hecho de la novela. El Drácula de Stoker evidentemente es un personaje salvaje y brutal, pero su violencia aparece matizada en la narración de Stoker. Argento, por el contrario, es pródigo en presentar la brutalidad del conde. Thomas Kretschmann interpreta a un Drácula cruel y vengativo, pero también sensible y atormentado.</p>
+                    <p>La película tuvo en general valoraciones negativas de la crítica.</p>
+                    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="futuro" class="marco-completo">
+            
+
+            <!--<iframe width="420" height="315">-->
+                <!--src="https://www.youtube.com/watch?v=X43Iz8d1XFQ&t=8s"-->
+            <!--</iframe>-->
+            <!--futuro-->
+
+            <!--<video width="420" height="315" controls autoplay>-->
+                <!--<source src="https://www.youtube.com/watch?v=X43Iz8d1XFQ&t=8s" type="video/mp4">-->
+            <!--</video>-->
+            <!--<iframe width="200px" height="150px" src="https://www.youtube.com/embed/X43Iz8d1XFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            <iframe class="video-youtube" src="https://www.youtube.com/embed/X43Iz8d1XFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        
+        <div id="pie-pagina">
+            <p>cinEncuadre Colectivo<br>
+                <em>"Encuadrando y desencuadrando el séptimo arte"</em><br>
+                Medellín<br>
+                Colombia
+            </p>
+        </div>
+        
+    </body>
+</html>
