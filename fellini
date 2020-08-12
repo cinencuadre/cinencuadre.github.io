@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>cinEncuadre</title>
+        <!--<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/cinencuadre/cinencuadre.github.io/master/style.css">-->
+        <style>
+
+            <!---->
+            body {
+                background-color:rgb(255, 255, 255);
+                font-family:"Optima", sans-serif;
+                margin:0px;
+                padding:0px;
+                width:100%;
+            }
+
+
+            h1 {
+                color:rgb(180,0,0);
+                background-color:rgb(255,255,255);
+                margin:0px;
+                padding:10px;
+                text-align:center;
+                font-size:30px;
+                clear:both;
+            }
+
+
+            h2 {
+                color:rgb(120,0,0);
+                background-color:rgb(255,255,255);
+                font-size:25px;
+                margin:0px;
+                padding:10px;
+            }
+
+
+            h3 {
+                color:rgb(120, 0, 0);
+                margin:0px;
+                padding:10px;
+                font-size:20px;
+            }  
+
+
+            h5 {
+                margin:5px;
+                padding:5px;
+                color:rgb(120,0,0);
+                font-size:13px;
+            }
+
+
+            p {
+                color:rgb(40, 40, 40);
+                text-align: justify;
+                padding:15px;
+                padding-top:15px;
+                padding-bottom:15px;
+                margin:0px;
+                font-size:18px;
+            }
+
+
+            li {
+                color:rgb(40, 40, 40);
+                margin:0px;
+                padding:5px;
+                padding-right:10px;   
+                font-size:18px;
+                text-align:justify;
+            }
+
+
+            a {
+                color:none;
+            }
+
+            img, object, video, embed {
+                max-width:100%;
+            }
+
+            .cuadro {
+                padding: 10px;
+                margin-top:25px;
+                margin-left:20px;
+                margin-right:20px;
+                margin-bottom:25px;
+                background-color:white;
+                /*width:90%;*/
+                /*min-height:115px;*/
+                font-size:18px;
+            }
+
+
+            .img-portada {
+                object-fit: cover;
+                width:100%;
+                height:400px;
+                /*margin:0px;*/
+                margin-left:0px;
+                margin-right:0px;
+                padding:0px;
+            }
+
+            .marco-completo {
+                margin:0px;
+                margin-top:0px;
+                padding:0px;
+                background-color:rgb(255,255,255);
+                clear:both;
+               
+            }
+
+
+            .marco-reducido {
+                background-color:rgb(255,255,255);
+                /*margin:0px;*/
+                padding:10px;
+                /*padding-top:20px;*/  
+                /*padding-bottom:20px;*/
+                font-size:18px;
+                width:80%;
+                margin:auto;
+                margin-top:0px;
+                margin-bottom:0px;
+                clear:both;
+
+            }
+
+
+            .lista {
+                background-color:rgb(255,255,255);
+                margin:0px;
+                padding:0px;
+                font-size:18px;
+            }
+
+
+            .rsn-pelicula {
+                background-color:rgb(220,250,250);
+                /*float:left;
+                width:300px;                
+                height:500px;
+                overflow-y:auto;*/ 
+                /*min-height:300px;*/            
+                clear:both;     
+                margin:0px;        
+                margin-top:40px;
+                margin-bottom:40px;
+                min-height: 400px;
+                padding:15px;
+                font-size:18px;
+            }
+
+
+            .img-resena {
+                object-fit:cover;
+                width:80%;
+                max-width:80%;
+                max-height:690px;
+                margin:auto;
+                /*margin-top:10px;
+                margin-bottom:10px;*/
+                /*padding:0px;*/
+                background-color:rgb(120,120,120);
+                
+            }
+
+
+            .pie-foto {
+                font-size: 15px;
+                color:rgb(90, 40, 40);
+                margin:0px;
+                padding:0px;
+                font-weight:bold;
+            }
+            <!---->
+
+
+            #cuadro-logo {
+                margin:auto;
+                width:50%;
+                align-items: center;
+                background-color:black;
+                text-align: center;
+
+            }
+
+            #banda-superior {
+
+                /*height:120px;*/
+                padding:10px;
+                /*margin-left:-30%;*/
+                /*text-align:left;*/
+                /*align-items: left;*/
+                position:fixed;
+                top:0px;
+                left:0px;
+                width:100%;
+                background-color:black;
+                align-items: center;
+                z-index:1;
+            }
+
+            #logo {
+                object-fit:cover;
+                /*height:100px;
+                width:360px;*/
+                width:100%;                 
+                height:100px;
+                background-color:black;
+                /*margin:0px;*/
+                padding:10px;
+                /*margin-left:180px;*/
+                /*margin-left:50%;*/
+            }
+
+
+            #logo-redes {
+                /*float:right;*/
+                background-color:rgb(70,70,70);
+                margin-top:140px;
+                /*vertical-align: middle;*/
+                align-items:center;
+                /*width:250px;*/
+                /*width:100%;*/
+                padding:10px;
+                clear:both;
+
+            }
+
+
+            #siguenos {
+                text-align:right;
+                vertical-align:middle;
+                padding:15px;
+                /*line-height:50px;*/
+                font-size:18px;
+                /*width: 200px;*/
+                background-color:rgb(70,70,70)
+            }    
+
+                        
+            #logo-instagram {
+                /*float:right;*/
+                /*height:50px;*/               
+                margin:10px;
+                width:5%;
+            }   
+
+            #recuadro-declaracion {
+                background-color:black;
+                /*height:500px;*/
+                padding:10px;
+                padding-bottom:30px;
+                /*height:400px;*/
+            }
+
+
+            #pie-pagina {
+                text-align:center;
+                font-size:15px;
+                background-color:black;
+                color:rgb(100,80,80);
+                padding:18px;
+                clear:both;
+            }
+
+            #futuro {
+                padding: 40px;                
+                width:100%;
+                /*height:405px;*/
+                background-color:rgb(255,230,230);
+                clear:both;
+                align-content:center;
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+        
+        <div id="banda-superior">
+            <div id="cuadro-logo">
+                <img id="logo" src="https://raw.githubusercontent.com/cinencuadre/cinencuadre.github.io/master/Logo%20fnd%20oscuro.png">  
+            </div>
+        </div>
+
+        <div id="logo-redes">
+                <p id="siguenos">
+                    <a href="https://www.instagram.com/cinencuadrecolectivo/?hl=es-la">Síguenos en Instagram:</a>                
+                    <img id="logo-instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/240px-Instagram_logo_2016.svg.png">   
+                </p>          
+     
+        </div>  
+
+
+
+        <div class="marco-completo">
+            <div class="marco-completo">
+                <h1 id="pry-capas">Capas, sangre y colmillos</h1> 
+                <img class="img-portada" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bela_lugosi_dracula.jpg/640px-Bela_lugosi_dracula.jpg"><br>
+                <h2>Introducción</h2>
+                <p>Desde la aparición en la literatura del vampiro, los terroríficos relatos en las veladas góticas del siglo XVIII, y pasando por la novela descriptiva del tenebroso conde Drácula en la obra de Bram
+                    Stoker hasta nuestros días, las capas, los colmillos y la sangre han llenado de pánico nuestra imaginación y el cine en sus 123 años no ha sido ajeno a este fenómeno.
+                    Con esta muestra pretendemos hacer un recorrido audiovisual por los más siniestros, terroríficos o traídos de los cabellos vampiros y Dráculas llevados majestuosamente a la pantalla
+                    gigante. La muestra "Capas, sangre y colmillos" fue realizada en el marco de la Segunda Muestra de Cine Fantástico y de Terror Fantasmagoría.</p>
+        
+            </div>
+
+
+
+            <div class="lista">
+                <h2>Películas</h2>
+                    <ul>
+                        <li><a href="#nosferatu">Nosferatu</a></li>
+                        <li><a href="#dracula1931">Drácula (1931)</a></li>
+                        <li><a href="#son-of-dracula">El hijo de Drácula</a></li>            
+                        <li><a href="#house-of-dracula">La casa de Drácula</a></li>            
+                        <li><a href="#el-vampiro">El vampiro</a></li>            
+                        <li><a href="#dracula1958">Drácula (1958)</a></li>            
+                        <li><a href="#dance-of-the-vampires">La danza de los vampiros</a></li>            
+                        <li><a href="#lake-of-dracula">El lago de Drácula</a></li>            
+                        <li><a href="#salems-lot">Salem's lot</a></li>            
+                        <li><a href="#nosferatu1979">Nosferatu, el vampiro de la noche</a></li>            
+                        <li><a href="#vampiros-en-la-habana">Vampiros en La Habana</a></li>            
+                        <li><a href="#bram-stokers-dracula">Drácula de Bram Stoker</a></li>
+                        <li><a href="#shadow-of-the-vampire">La sombra del vampiro</a></li>
+                        <li><a href="#dracula-pages-from-a-virgins-diary">Drácula, páginas del diario de una virgen</a></li>
+                        <li><a href="#dracula-3d">Drácula 3D</a></li>         
+                </ul> <br>
+            </div>
+
+
+            <div class="marco-reducido">
+     
+                <img class="img-resena" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Wismar_Heilig_Geist_Hof_Nosferatu_01.jpg">
+    
+                <p class="pie-foto">Poster de Nosferatu. <em>Fuente: Wikipedia</em></p>
+              
+                <div class="rsn-pelicula">        
+                    <h3 id="nosferatu">Nosferatu</h3>
+                    <h5>Año: 1922</h5>
+                    <h5>Director: Friedrich Wilhelm Murnau</h5>                       <h5>País: Alemania</h5> 
+ 
+                    <p>Primera película de la historia que quiso llevar a la pantalla gigante la famosa novela de Bram Stoker y su personaje homónimo: Drácula. Sin embargo, no fue basada fielmente en el libro original sino adaptada por Henrik Galeen en una versión libre y luego traducida a imágenes en movimiento gracias al ingenio de Murnau.</p>
+                    <p> Hija directa del Expresionismo Alemán, esta cinta es tan oscura (en cuanto al uso de sombras, fundidos a iris y lúgubres escenarios) como las espeluznantes intenciones de su villano protagonista: el Conde de Orlok, también llamado, Nosferatu. Este monstruoso ser, salido de las cavernas del averno, es un vampiro que necesita revitalizarse con la sangre de una doncella.</p> 
+                    <p> Escena por escena, el realizador de origen alemán nos conduce tanto por el castillo del conde (incluyendo la tumba donde este duerme) como a través de diversos lugares que ambientan, de un modo sobrecogedor, la trama y las intenciones que dicho ser del inframundo tiene para lograr su cometido.</p>
+                    <p>A pesar de lo recargado del maquillaje de los personajes y la sobre actuación de los mismos (ambos requisitos indispensables para el cine del periodo mudo) o gracias a estos y a otros tantos elementos -como los mencionados anteriormente- es que esta obra sigue siendo un gran referente para el género del terror y el universo de los chupasangre.</p>
+    
+                    <p><a href="#pry-capas">Volver al Índice</a></p>
+                </div>
+
+
+    
+
+
+            </div>
+        </div>
+
+
+        <div id="futuro" class="marco-completo">
+            
+
+            <!--<iframe width="420" height="315">-->
+                <!--src="https://www.youtube.com/watch?v=X43Iz8d1XFQ&t=8s"-->
+            <!--</iframe>-->
+            <!--futuro-->
+
+            <!--<video width="420" height="315" controls autoplay>-->
+                <!--<source src="https://www.youtube.com/watch?v=X43Iz8d1XFQ&t=8s" type="video/mp4">-->
+            <!--</video>-->
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/X43Iz8d1XFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        
+        <div>
+            <p id="pie-pagina">cinEncuadre Colectivo<br>
+                <em>"Encuadrando y desencuadrando el séptimo arte"</em><br>
+                Medellín<br>
+                Colombia
+            </p>
+        </div>
+        
+    </body>
+</html>
