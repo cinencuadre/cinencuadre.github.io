@@ -118,18 +118,31 @@ img, object, video, embed, iframe {
 
 
 #logo-redes {
-    background-color:rgb(220,70,70);
+    background-color:rgb(40,40,40);
+    text-align: right;
+    width: 96%;
+    padding:2%;
+    margin: 0%;
 }
 
 
 #siguenos {
     font-size:18px;
-    background-color:rgb(70,220,70)
+    background-color:rgb(40,40,40);
+    line-height:10%;
+    padding: 5% 0% 5%;
+    margin: 0%;
+    width: 88%
 }    
 
             
 #logo-instagram {
-    background-color: rgb(70,70,200);
+    background-color: rgb(40,40,40);
+    width: 10%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+    float:right;
 }   
 
 #recuadro-declaracion {
