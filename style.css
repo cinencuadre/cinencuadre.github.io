@@ -47,13 +47,12 @@ li {
 }
 
 
-a {
-    background-color: firebrick;
-}
+/*a {
+
+}*/
 
 img, object, video, embed, iframe {
     max-width:100%;
-    background-color: indianred;
 }
 
 
