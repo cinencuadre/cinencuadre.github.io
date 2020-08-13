@@ -107,11 +107,13 @@ img, object, video, embed, iframe {
 
 #banda-superior {
     background-color:rgb(50, 161, 205);
+    text-align:center;
 }
 
 #logo {
-    width:100%;
-    background-color:yellow;
+    width:50%;
+    padding:5%;
+    background-color:black;
 }
 
 
