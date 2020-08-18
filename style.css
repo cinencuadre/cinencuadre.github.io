@@ -4,7 +4,7 @@ body {
 
 header, nav, footer, section, article, div {
   box-sizing: border-box;
-} //
+}
 
 
 img, object, video, embed, iframe {
@@ -117,7 +117,6 @@ li {
 .img-resena {
     width:100%;
     /*background-color:rgb(120,120,120);*/
-
 }
 
 
