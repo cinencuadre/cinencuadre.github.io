@@ -2,9 +2,9 @@ body {
     font-family:"Optima", sans-serif;
 }
 
-header, nav, footer, section, article, div {
+/*header, nav, footer, section, article, div {
   box-sizing: border-box;
-}
+}*/
 
 
 img, object, video, embed, iframe {
