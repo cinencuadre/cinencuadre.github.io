@@ -90,9 +90,6 @@ li {
 .cuadro {
     	background-color:rgb(226, 198, 43);
     	font-size:18px;
-	margin-left:2%;
-	margin-right:2%;
-	margin-bottom:5%;
 }
 
 
@@ -112,8 +109,6 @@ li {
 .marco-reducido {
     background-color:rgb(145,115,225);
     font-size:18px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .lista-peliculas {
@@ -233,14 +228,20 @@ li {
 	.marco-reducido {
 	    	display: grid;
 	    	grid-template-columns: 1fr 1fr;
+		column-gap: 1em;
+		row-gap: 1em;
 	}	
 } 
 
 @media screen and (min-width: 1000px) {
 	body { 
 		background-color: red; 
+	}
+	.marco-reducido {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;		
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 1em;
+		row-gap: 1em;
 	}
 }     
  
