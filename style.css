@@ -1,208 +1,205 @@
+body {
+    font-family:"Optima", sans-serif;
+}
 
-@media screen and (max-width: 1000px) {
-	body {
-	    background-color:rgb(255, 255, 255);
-	    font-family:"Optima", sans-serif;
-	}
-
-	header, nav, footer, section, article, div {
-	  box-sizing: border-box;
-	} //
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+} //
 
 
-	img, object, video, embed, iframe {
-	    max-width:100%;
-	}
+img, object, video, embed, iframe {
+    max-width:100%;
+}
 
 
-	h1, h2, h3, h4, h5 {
-	    margin: 0%;
-	}
+h1, h2, h3, h4, h5 {
+    margin: 0%;
+}
 
-	h1 {
-	    color:rgb(180,0,0);
-	    /*background-color:rgb(255,120,255);*/
-	    text-align:center;
-	    font-size:30px;
-	    padding-top: 5%;
-	    padding-bottom: 5%;
-	}
-
-
-	h2 {
-	    color:rgb(120,0,0);
-	    /*background-color:rgb(60,110,190);*/
-	    font-size:25px;
-	    padding-top: 3%;
-	    padding-bottom: 3%;
-	    padding-left: 2%;
-	}
+h1 {
+    color:rgb(180,0,0);
+    /*background-color:rgb(255,120,255);*/
+    text-align:center;
+    font-size:30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 
-	h3 {
-	    color:rgb(120, 0, 0);
-	    font-size:20px;
-	    padding-top: 2%;
-	    padding-bottom: 2%;
-	    padding-left: 2%;
-	    /*background-color: chartreuse;*/
-	}  
+h2 {
+    color:rgb(120,0,0);
+    /*background-color:rgb(60,110,190);*/
+    font-size:25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+}
 
 
-	h5 {
-	    color:rgb(120,0,0);
-	    font-size:13px;
-	    padding-left: 2%;
-	    /*background-color: darkorange;*/
-	}
+h3 {
+    color:rgb(120, 0, 0);
+    font-size:20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    /*background-color: chartreuse;*/
+}  
 
 
-	p {
-	    color:rgb(40, 40, 40);
-	    text-align: justify;
-	    padding-left: 3%;
-	    padding-right: 3%;
-	    padding-bottom: 2%;
-	}
-
-	ul {
-	    list-style:none;
-	    margin: 0%;
-	    padding: 0%;
-
-	li {
-	    color:rgb(40, 40, 40);
-	    font-size:18px;
-	    line-height: 3em;
-	    text-align:center;
-	    margin:0%;
-	    padding:0%;
-	    border: 1px solid rgb(220,220,220);
-	    background-color: rgb(240,240,240);
-	}
-
-	    li a {
-		text-decoration: none;
-	    }
-
-	/*a {
-
-	}*/
+h5 {
+    color:rgb(120,0,0);
+    font-size:13px;
+    padding-left: 2%;
+    /*background-color: darkorange;*/
+}
 
 
-	.cuadro {
-	    background-color:rgb(226, 198, 43);
-	    font-size:18px;
-	}
+p {
+    color:rgb(40, 40, 40);
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+}
+
+ul {
+    list-style:none;
+    margin: 0%;
+    padding: 0%;
+
+li {
+    color:rgb(40, 40, 40);
+    font-size:18px;
+    line-height: 3em;
+    text-align:center;
+    margin:0%;
+    padding:0%;
+    border: 1px solid rgb(220,220,220);
+    background-color: rgb(240,240,240);
+}
+
+    li a {
+	text-decoration: none;
+    }
+
+/*a {
+
+}*/
 
 
-	.img-portada {
-	    width:100%;
-	}
-
-	.marco-completo {
-	    background-color:rgb(130,180,130);
-	}
+.cuadro {
+    background-color:rgb(226, 198, 43);
+    font-size:18px;
+}
 
 
-	.marco-reducido {
-	    background-color:rgb(145,115,225);
-	    font-size:18px;
-	}
+.img-portada {
+    width:100%;
+}
+
+.marco-completo {
+    background-color:rgb(130,180,130);
+}
 
 
-	.rsn-pelicula {
-	    background-color:rgb(250,250,220);
-	    font-size:18px;
-	}
+.marco-reducido {
+    background-color:rgb(145,115,225);
+    font-size:18px;
+}
 
 
-	.img-resena {
-	    width:100%;
-	    /*background-color:rgb(120,120,120);*/
-
-	}
-
-
-	.pie-foto {
-	    font-size: 15px;
-	    color:rgb(90, 40, 40);
-	}
-
-	.video-youtube {
-	    width:100%;
-	    height:auto;
-	}
+.rsn-pelicula {
+    /*background-color:rgb(250,250,220);*/
+    font-size:18px;
+}
 
 
-	#banda-superior {
-	    background-color:black;
-	    text-align:center;
-	}
+.img-resena {
+    width:100%;
+    /*background-color:rgb(120,120,120);*/
 
-	#logo {
-	    width:40%;
-	    padding:5%;
-	    background-color:black;
-	}
+}
 
 
-	#logo-redes {
-	    background-color:rgb(40,40,40);
-	    text-align: right;
-	    width: 96%;
-	    padding:2%;
-	    margin: 0%;
-	}
+.pie-foto {
+    font-size: 15px;
+    color:rgb(90, 40, 40);
+}
+
+.video-youtube {
+    width:100%;
+    height:auto;
+}
 
 
-	#siguenos {
-	    font-size:18px;
-	    background-color:rgb(40,40,40);
-	    line-height:10%;
-	    padding: 5% 0% 5%;
-	    margin: 0%;
-	    width: 88%;
-	    float:left;
-	}    
+#banda-superior {
+    background-color:black;
+    text-align:center;
+}
+
+#logo {
+    width:40%;
+    padding:5%;
+    background-color:black;
+}
 
 
-	#logo-instagram {
-	    width: 10%;
-	    height: auto;
-	    padding: 0%;
-	    margin: 0%;
-	}   
-
-	/*#recuadro-declaracion {
-	    background-color:orange;
-	}*/
+#logo-redes {
+    background-color:rgb(40,40,40);
+    text-align: right;
+    width: 96%;
+    padding:2%;
+    margin: 0%;
+}
 
 
-	#futuro {
-	    background-color:rgb(255,230,230);
-	}
+#siguenos {
+    font-size:18px;
+    background-color:rgb(40,40,40);
+    line-height:10%;
+    padding: 5% 0% 5%;
+    margin: 0%;
+    width: 88%;
+    float:left;
+}    
 
-	#pie-pagina {
 
-	    font-size:15px;
-	    background-color:rgb(40,40,40);
-	    color:rgb(230,230,230);
-	    padding-top:1em;
-	    padding-bottom: 1em;
-	}
+#logo-instagram {
+    width: 10%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+}   
 
-	#pie-pagina p {
-	    text-align:center;
-	    color:rgb(230,230,230);
-	}	
+
+#futuro {
+    background-color:rgb(255,230,230);
+}
+
+#pie-pagina {
+
+    font-size:15px;
+    background-color:rgb(40,40,40);
+    color:rgb(230,230,230);
+    padding-top:1em;
+    padding-bottom: 1em;
+}
+
+#pie-pagina p {
+    text-align:center;
+    color:rgb(230,230,230);
+}
+		
+		
+@media screen and (max-width: 700px) {
+	body {background-color:rgb(255,255,0); }
 } 
 
 @media screen and (min-width: 700px) and (max-width:1000px) {
-	body { background-color: blue; ]
+	body { background-color: blue; }
 } 
 
 @media screen and (min-width: 1000px) {
-	body { background-color: red; ]
+	body { background-color: red; }
 }     
  
