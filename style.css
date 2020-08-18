@@ -2,9 +2,9 @@ body {
     font-family:"Optima", sans-serif;
 }
 
-/*header, nav, footer, section, article, div {
+header, nav, footer, section, article, div {
   box-sizing: border-box;
-}*/
+}
 
 
 img, object, video, embed, iframe {
@@ -66,6 +66,7 @@ ul {
     margin: 0%;
     /*padding-left: 3%;*/
     padding-right: 3%;
+    padding-top: 2%;
     padding-bottom: 2%;
 }
 
