@@ -216,13 +216,13 @@ li {
 }
 		
 		
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
 	body{
 		background-color:rgb(255,255,0);
 	}
 } 
 
-@media screen and (min-width: 700px) and (max-width:1000px) {
+@media screen and (min-width: 650px) and (max-width:1000px) {
 	body {
 		background-color: blue; 
 	}
