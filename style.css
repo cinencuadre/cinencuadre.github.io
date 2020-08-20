@@ -58,7 +58,7 @@ p {
     padding-bottom: 2%;
 }
 
-/*ul {
+ul {
     margin: 0%;
     padding-right: 3%;
     padding-top: 2%;
@@ -72,7 +72,7 @@ li {
     margin:0%;
     padding-right: 3%;
     padding-bottom:1.5em;
-}*/
+}
 
 .cuadro {
     	background-color:rgb(226, 198, 43);
@@ -244,7 +244,32 @@ li {
 		column-gap: 5em;
 		row-gap: 5em;
     }	
-   
+
+    .rsn-pelicula {
+        background-color:rgb(250,250,220);
+        font-size:18px;
+    } 
+
+    .lista-peliculas {
+        list-style:none;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .item-pelicula {
+        color:rgb(40, 40, 40);
+        font-size:18px;
+        line-height: 3em;
+        text-align:center;
+        margin:0%;
+        padding:0%;
+        border: 1px solid rgb(220,220,220);
+        background-color: rgb(240,240,240);
+    }	   
+
+    .item-pelicula a {
+        text-decoration:none;
+    }    
 } 
 
 @media screen and (min-width: 1000px) {
@@ -257,6 +282,31 @@ li {
 		column-gap: 1em;
 		row-gap: 1em;
     }
-      
+
+    .rsn-pelicula {
+        background-color:rgb(250,250,220);
+        font-size:18px;
+    } 
+
+    .lista-peliculas {
+        list-style:none;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .item-pelicula {
+        color:rgb(40, 40, 40);
+        font-size:18px;
+        line-height: 3em;
+        text-align:center;
+        margin:0%;
+        padding:0%;
+        border: 1px solid rgb(220,220,220);
+        background-color: rgb(240,240,240);
+    }	   
+
+    .item-pelicula a {
+        text-decoration:none;
+    }       
 }     
  
