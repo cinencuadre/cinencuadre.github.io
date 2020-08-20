@@ -63,30 +63,20 @@ p {
 }
 
 ul {
-    margin: 0%;
-    /*padding-left: 3%;*/
+    /*margin: 0%;
     padding-right: 3%;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 2%;*/
 }
 
 li {
-    color:rgb(40, 40, 40);
+    /*color:rgb(40, 40, 40);
     font-size:18px;
     text-align:justify;
     margin:0%;
     padding-right: 3%;
-    padding-bottom:1.5em;
+    padding-bottom:1.5em;*/
 }
-
-/*li a {
-	text-decoration: none;
-}*/
-
-/*a {
-
-}*/
-
 
 .cuadro {
     	background-color:rgb(226, 198, 43);
@@ -112,13 +102,13 @@ li {
     font-size:18px;
 }
 
-.lista-peliculas {
+/*.lista-peliculas {
     list-style:none;
     margin: 0%;
     padding: 0%;	
-}
+}*/
 
-.item-peliculas {
+/*.item-pelicula {
     color:rgb(40, 40, 40);
     font-size:18px;
     line-height: 3em;
@@ -127,16 +117,18 @@ li {
     padding:0%;
     border: 1px solid rgb(220,220,220);
     background-color: rgb(240,240,240);	
-}
+}*/
 
-.item peliculas a {
+/*.item-pelicula a {
 	text-decoration:none;
-}
+}*/
 
 
 .rsn-pelicula {
     background-color:rgb(250,250,220);
     font-size:18px;
+    /*margin-left:2%;
+    margin-right:2%;*/
 }
 
 
@@ -219,7 +211,32 @@ li {
 @media screen and (max-width: 650px) {
 	body{
 		background-color:rgb(255,255,0);
-	}
+    }
+    .rsn-pelicula {
+        background-color:rgb(250,250,220);
+        font-size:18px;
+        /*margin-left:2%;
+        margin-right:2%;*/
+    } 
+    /*.lista-peliculas {
+        list-style:none;
+        margin: 0%;
+        padding: 0%;
+    }*/
+    /*.item-pelicula {
+        color:rgb(40, 40, 40);
+        font-size:18px;
+        line-height: 3em;
+        text-align:center;
+        margin:0%;
+        padding:0%;
+        border: 1px solid rgb(220,220,220);
+        background-color: rgb(240,240,240);
+    }*/	   
+
+    /*.item-pelicula a {
+        text-decoration:none;
+    }*/            
 } 
 
 @media screen and (min-width: 650px) and (max-width:1000px) {
@@ -229,9 +246,10 @@ li {
 	.marco-reducido {
 	    	display: grid;
 	    	grid-template-columns: 1fr 1fr;
-		column-gap: 1em;
-		row-gap: 1em;
-	}	
+		column-gap: 5em;
+		row-gap: 5em;
+    }	
+   
 } 
 
 @media screen and (min-width: 1000px) {
@@ -243,6 +261,7 @@ li {
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 1em;
 		row-gap: 1em;
-	}
+    }
+      
 }     
  
