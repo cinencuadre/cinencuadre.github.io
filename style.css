@@ -56,7 +56,7 @@ p {
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 1%;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 ul {
@@ -73,7 +73,7 @@ li {
 }
 
 .cuadro {
-    	background-color:rgb(226, 198, 43);
+    	background-color:rgb(246, 228, 183);
         font-size:18px;
         padding: 2%;
 }
@@ -259,7 +259,7 @@ li {
     } 
 
     .lista-peliculas {
-        display: inline-block;
+        display: inline;
     }
 
     .item-pelicula {
@@ -306,9 +306,9 @@ li {
 
     #quienes-somos {
         display: grid;
-        grid-template-columns: 1fr 3fr;
-        column-gap: 3em;
-        row-gap: 3em;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2em;
+        row-gap: 2em;
     }
 
     #mision {
@@ -323,6 +323,7 @@ li {
 
     #objetivos {
         grid-row-start: 1;
+        grid-row-end:3;
         grid-column-start: 2;        
     }    
        
@@ -332,7 +333,7 @@ li {
     } 
 
     .lista-peliculas {
-        display: inline-block;
+        display: inline;
     }
 
     .item-pelicula {
