@@ -2,9 +2,9 @@ body {
     font-family:"Optima", sans-serif;
 }
 
-/*header, nav, footer, section, article, div {
+header, nav, footer, section, article, div {
   box-sizing: border-box;
-}*/
+}
 
 
 img, object, video, embed, iframe {
@@ -45,7 +45,7 @@ h3 {
 
 h5 {
     color:rgb(120,0,0);
-    font-size:13px;
+    font-size:15px;
     padding-left: 2%;
 }
 
@@ -55,14 +55,13 @@ p {
     text-align: justify;
     padding-left: 3%;
     padding-right: 3%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
+    font-size: 15px;
 }
 
 ul {
     margin: 0%;
-    padding-right: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    background-color: blue;
 }
 
 li {
@@ -72,6 +71,7 @@ li {
     margin:0%;
     padding-right: 3%;
     padding-bottom:1.5em;
+    background-color: pink;
 }
 
 .cuadro {
@@ -82,6 +82,7 @@ li {
 
 .img-portada {
     width:100%;
+    box-sizing: border-box;
 }
 
 .marco-completo, .marco-reducido, .cuadro {
@@ -89,7 +90,7 @@ li {
 }
 
 .marco-completo {
-    	background-color:rgb(250,180,130);
+    background-color:rgb(250,180,130);
 }
 
 
@@ -98,13 +99,13 @@ li {
     font-size:18px;
 }
 
-/*.lista-peliculas {
+.lista-peliculas {
     list-style:none;
     margin: 0%;
     padding: 0%;	
-}*/
+}
 
-/*.item-pelicula {
+.item-pelicula {
     color:rgb(40, 40, 40);
     font-size:18px;
     line-height: 3em;
@@ -113,11 +114,11 @@ li {
     padding:0%;
     border: 1px solid rgb(220,220,220);
     background-color: rgb(240,240,240);	
-}*/
+}
 
-/*.item-pelicula a {
+.item-pelicula a {
 	text-decoration:none;
-}*/
+}
 
 
 .rsn-pelicula {
@@ -127,7 +128,9 @@ li {
 
 
 .img-resena {
-    width:100%;
+    /*width:100%;*/
+    box-sizing: border-box;
+    object-fit:contain;
     /*background-color:rgb(120,120,120);*/
 }
 
@@ -140,6 +143,7 @@ li {
 .video-youtube {
     width:100%;
     height:auto;
+    box-sizing: border-box;
 }
 
 
@@ -182,6 +186,15 @@ li {
     margin: 0%;
 }   
 
+/*#quienes-somos {
+    width: 100;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#quienes-somos cuadro {
+    width:100%;
+}*/
 
 #futuro {
     background-color:rgb(255,230,230);
@@ -202,48 +215,67 @@ li {
 }
 		
 		
-@media screen and (max-width: 650px) {
-	body{
-		background-color:rgb(255,255,0);
-    }
-
-    .rsn-pelicula {
-        background-color:rgb(250,250,220);
-        font-size:18px;
-    } 
-
-    .lista-peliculas {
-        list-style:none;
-        margin: 0%;
-        padding: 0%;
-    }
-
-    .item-pelicula {
-        color:rgb(40, 40, 40);
-        font-size:18px;
-        line-height: 3em;
-        text-align:center;
-        margin:0%;
-        padding:0%;
-        border: 1px solid rgb(220,220,220);
-        background-color: rgb(240,240,240);
-    }	   
-
-    .item-pelicula a {
-        text-decoration:none;
-    }            
-} 
-
 @media screen and (min-width: 650px) and (max-width:1000px) {
 	body {
 		background-color: blue; 
-	}
+    }
+  
+    #logo {
+        width:35%;
+        padding:3%;
+    }
+    
+    
+    #logo-redes {
+        background-color:rgb(40,40,40);
+        text-align: right;
+        width: 96%;
+        padding:2%;
+        margin: 0%;
+    }
+    
+    
+    /*#siguenos {
+        font-size:18px;
+        background-color:rgb(40,40,40);
+        line-height:10%;
+        padding: 5% 0% 5%;
+        margin: 0%;
+        width: 88%;
+        float:left;
+    }    
+    
+   
+    #logo-instagram {
+        width: 7%;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+    }*/ 
+
 	.marco-reducido {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-		column-gap: 5em;
-		row-gap: 5em;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/*column-gap: 3em;
+		row-gap: 3em;*/
     }	
+
+    #quienes-somos {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    #mision {
+        width:50%;
+    }
+
+    #vision {
+        width:50%;
+    }
+
+    #objetivos {
+        width:100%;
+    }
 
     .rsn-pelicula {
         background-color:rgb(250,250,220);
@@ -251,44 +283,88 @@ li {
     } 
 
     .lista-peliculas {
-        list-style:none;
-        margin: 0%;
-        padding: 0%;
+        display: inline-block;
     }
 
     .item-pelicula {
-        color:rgb(40, 40, 40);
-        font-size:18px;
-        line-height: 3em;
-        text-align:center;
-        margin:0%;
-        padding:0%;
-        border: 1px solid rgb(220,220,220);
-        background-color: rgb(240,240,240);
+        width: 33,333333%;
     }	   
 
-    .item-pelicula a {
-        text-decoration:none;
-    }    
+  
 } 
 
 @media screen and (min-width: 1000px) {
 	body { 
 		background-color: red; 
-	}
+    }
+
+    
+    #logo {
+        width:30%;
+        padding:2%;
+    }
+    
+    
+    #logo-redes {
+        width: 96%;
+        padding:2%;
+    }
+    
+    
+    /*#siguenos {
+        font-size:18px;
+        background-color:rgb(40,40,40);
+        line-height:10%;
+        padding: 5% 0% 5%;
+        margin: 0%;
+        width: 88%;
+        float:left;
+    }    
+    
+   
+    #logo-instagram {
+        width: 10%;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+    }*/ 
+
+
 	.marco-reducido {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 1em;
-		row-gap: 1em;
+		/*column-gap: 3em;
+		row-gap: 3em;*/
     }
 
+    #quienes-somos {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 3em;
+        row-gap: 3em;
+    }
+
+    #mision {
+        grid-column-start: 1;
+        grid-column-start: 1;
+    }
+
+    #vision {
+        grid-column-start: 1;
+        grid-column-start: 2;        
+    }
+
+    #objetivos {
+        grid-column-start: 2;
+        grid-column-start: 1;        
+    }    
+       
     .rsn-pelicula {
         background-color:rgb(250,250,220);
         font-size:18px;
     } 
 
-    .lista-peliculas {
+    /*.lista-peliculas {
         list-style:none;
         margin: 0%;
         padding: 0%;
@@ -307,6 +383,6 @@ li {
 
     .item-pelicula a {
         text-decoration:none;
-    }       
+    }*/       
 }     
  
