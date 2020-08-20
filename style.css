@@ -61,7 +61,6 @@ p {
 
 ul {
     margin: 0%;
-    background-color: blue;
 }
 
 li {
@@ -71,12 +70,12 @@ li {
     margin:0%;
     padding-right: 3%;
     padding-bottom:1.5em;
-    background-color: pink;
 }
 
 .cuadro {
     	background-color:rgb(226, 198, 43);
-    	font-size:18px;
+        font-size:18px;
+        padding: 2%;
 }
 
 
@@ -128,7 +127,8 @@ li {
 
 
 .img-resena {
-    /*width:100%;*/
+    width:100%;
+    height: auto;
     box-sizing: border-box;
     object-fit:contain;
     /*background-color:rgb(120,120,120);*/
@@ -162,7 +162,7 @@ li {
 #logo-redes {
     background-color:rgb(40,40,40);
     text-align: right;
-    width: 96%;
+    width: 100%;
     padding:2%;
     margin: 0%;
 }
@@ -186,16 +186,6 @@ li {
     margin: 0%;
 }   
 
-/*#quienes-somos {
-    width: 100;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#quienes-somos cuadro {
-    width:100%;
-}*/
-
 #futuro {
     background-color:rgb(255,230,230);
 }
@@ -214,7 +204,10 @@ li {
     color:rgb(230,230,230);
 }
 		
-		
+
+
+
+
 @media screen and (min-width: 650px) and (max-width:1000px) {
 	body {
 		background-color: blue; 
@@ -226,32 +219,15 @@ li {
     }
     
     
-    #logo-redes {
-        background-color:rgb(40,40,40);
-        text-align: right;
-        width: 96%;
-        padding:2%;
-        margin: 0%;
-    }
-    
-    
-    /*#siguenos {
-        font-size:18px;
-        background-color:rgb(40,40,40);
-        line-height:10%;
-        padding: 5% 0% 5%;
-        margin: 0%;
-        width: 88%;
-        float:left;
+    #siguenos {
+        line-height:7%;
+        padding: 3% 0% 3%;
     }    
     
    
     #logo-instagram {
         width: 7%;
-        height: auto;
-        padding: 0%;
-        margin: 0%;
-    }*/ 
+    } 
 
 	.marco-reducido {
 		display: grid;
@@ -293,6 +269,11 @@ li {
   
 } 
 
+
+
+
+
+
 @media screen and (min-width: 1000px) {
 	body { 
 		background-color: red; 
@@ -303,31 +284,17 @@ li {
         width:30%;
         padding:2%;
     }
+      
     
-    
-    #logo-redes {
-        width: 96%;
-        padding:2%;
-    }
-    
-    
-    /*#siguenos {
-        font-size:18px;
-        background-color:rgb(40,40,40);
-        line-height:10%;
-        padding: 5% 0% 5%;
-        margin: 0%;
-        width: 88%;
-        float:left;
+    #siguenos {
+        line-height:5%;
+        padding: 2% 0% 2%;
     }    
     
    
     #logo-instagram {
-        width: 10%;
-        height: auto;
-        padding: 0%;
-        margin: 0%;
-    }*/ 
+        width: 5%;
+    }
 
 
 	.marco-reducido {
@@ -345,18 +312,18 @@ li {
     }
 
     #mision {
-        grid-column-start: 1;
+        grid-row-start: 1;
         grid-column-start: 1;
     }
 
     #vision {
-        grid-column-start: 1;
-        grid-column-start: 2;        
+        grid-row-start: 2;
+        grid-column-start: 1;        
     }
 
     #objetivos {
-        grid-column-start: 2;
-        grid-column-start: 1;        
+        grid-row-start: 1;
+        grid-column-start: 2;        
     }    
        
     .rsn-pelicula {
@@ -364,25 +331,12 @@ li {
         font-size:18px;
     } 
 
-    /*.lista-peliculas {
-        list-style:none;
-        margin: 0%;
-        padding: 0%;
+    .lista-peliculas {
+        display: inline-block;
     }
 
     .item-pelicula {
-        color:rgb(40, 40, 40);
-        font-size:18px;
-        line-height: 3em;
-        text-align:center;
-        margin:0%;
-        padding:0%;
-        border: 1px solid rgb(220,220,220);
-        background-color: rgb(240,240,240);
-    }	   
-
-    .item-pelicula a {
-        text-decoration:none;
-    }*/       
+        width: 20%;
+    }      
 }     
  
