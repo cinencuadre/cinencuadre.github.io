@@ -131,6 +131,8 @@ li {
     height: auto;
     box-sizing: border-box;
     object-fit:contain;
+    /*margin:5%;
+    padding:5%;*/
     /*background-color:rgb(120,120,120);*/
 }
 
@@ -300,14 +302,21 @@ li {
 	.marco-reducido {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		/*column-gap: 3em;
-		row-gap: 3em;*/
+		column-gap: 20px;
+		/*row-gap: 3em;*/
+    }
+
+    .img-resena {
+        /*padding:5%;*/
+        /*margin:5%;*/
+        /*object-fit:fill;*/
+        width: 90%;
     }
 
     #quienes-somos {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        column-gap: 2em;
+        grid-column-gap: 2em;
         row-gap: 2em;
     }
 
