@@ -74,20 +74,19 @@ li {
     margin:0%;
     padding-right: 3%;
     padding-bottom:1.5em;
-}
+}*/
 
 
 .marco-completo, .marco-reducido, .cuadro {
 	max-width: 100%;
 }
 
-/*.marco-completo {
+.marco-completo {
     background-color:rgb(250,180,130);
-}*/
+}
 
 
 .marco-reducido {
-    /*background-color:rgb(145,115,225);*/
     font-size:18px;
 }
 
