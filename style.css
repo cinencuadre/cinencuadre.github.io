@@ -12,8 +12,11 @@ img, object, video, embed, iframe {
 }
 
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
     margin: 0%;
+    max-width:100%;
+    width: 94%;
+    padding: 3%;
 }
 
 h1 {
@@ -57,6 +60,7 @@ p {
     padding-right: 3%;
     padding-bottom: 1%;
     font-size: 18px;
+    width:94%;
 }
 
 ul {
@@ -72,17 +76,6 @@ li {
     padding-bottom:1.5em;
 }
 
-.cuadro {
-    	background-color:rgb(246, 228, 183);
-        font-size:18px;
-        padding: 2%;
-}
-
-
-.img-portada {
-    width:100%;
-    box-sizing: border-box;
-}
 
 .marco-completo, .marco-reducido, .cuadro {
 	max-width: 100%;
@@ -96,6 +89,47 @@ li {
 .marco-reducido {
     background-color:rgb(145,115,225);
     font-size:18px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding:2%;
+}
+
+.rsn-pelicula {
+    background-color:rgb(250,250,220);
+    font-size:18px;
+    padding:0%;
+    margin:0%;
+    text-align:center;
+    max-width:100%;
+}
+
+.cuadro {
+    	background-color:rgb(246, 228, 183);
+        font-size:18px;
+        /*padding: 2%;*/
+}
+
+
+.img-portada {
+    width:100%;
+    box-sizing: border-box;
+}
+
+.img-resena {
+    width:94%;
+    height: auto;
+    margin:0%;
+    padding-left:3%;
+    padding-right:3%;
+}
+
+.video-youtube {
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
 }
 
 .lista-peliculas {
@@ -120,32 +154,9 @@ li {
 }
 
 
-.rsn-pelicula {
-    background-color:rgb(250,250,220);
-    font-size:18px;
-}
-
-
-.img-resena {
-    width:100%;
-    height: auto;
-    box-sizing: border-box;
-    object-fit:contain;
-    /*margin:5%;
-    padding:5%;*/
-    /*background-color:rgb(120,120,120);*/
-}
-
-
 .pie-foto {
     font-size: 15px;
     color:rgb(90, 40, 40);
-}
-
-.video-youtube {
-    width:100%;
-    height:auto;
-    box-sizing: border-box;
 }
 
 
@@ -214,7 +225,27 @@ li {
 	body {
 		background-color: blue; 
     }
-  
+
+	.marco-reducido {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/*column-gap: 3em;
+		row-gap: 3em;*/
+    }	
+
+    .rsn-pelicula {
+        background-color:rgb(250,250,220);
+        font-size:18px;
+    } 
+
+    .lista-peliculas {
+        display: inline;
+    }
+
+    .item-pelicula {
+        width: 33,333333%;
+    }	   
+
     #logo {
         width:35%;
         padding:3%;
@@ -231,12 +262,6 @@ li {
         width: 7%;
     } 
 
-	.marco-reducido {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		/*column-gap: 3em;
-		row-gap: 3em;*/
-    }	
 
     #quienes-somos {
         display: flex;
@@ -255,18 +280,6 @@ li {
         width:100%;
     }
 
-    .rsn-pelicula {
-        background-color:rgb(250,250,220);
-        font-size:18px;
-    } 
-
-    .lista-peliculas {
-        display: inline;
-    }
-
-    .item-pelicula {
-        width: 33,333333%;
-    }	   
 
   
 } 
@@ -281,7 +294,48 @@ li {
 		background-color: red; 
     }
 
-    
+    .marco-reducido {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 20px;
+		/*row-gap: 3em;*/
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0.5em;
+        row-gap: 0.5em;
+        padding:2%;
+    }
+
+    .rsn-pelicula {
+        background-color:rgb(250,250,220);
+        font-size:18px;
+    } 
+
+    .img-resena {
+
+        max-width: 100%;
+        width: 94%;
+        height: auto;
+        padding-left:3%;
+        padding-right:3%;
+        margin:0%;
+        
+    }
+
+
+    /*.lista-peliculas {
+
+
+    }*/
+
+    .item-pelicula {
+        display: inline;       
+        /*width: 20%;*/
+    } 
+
     #logo {
         width:30%;
         padding:2%;
@@ -298,20 +352,6 @@ li {
         width: 5%;
     }
 
-
-	.marco-reducido {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 20px;
-		/*row-gap: 3em;*/
-    }
-
-    .img-resena {
-        /*padding:5%;*/
-        /*margin:5%;*/
-        /*object-fit:fill;*/
-        width: 90%;
-    }
 
     #quienes-somos {
         display: grid;
@@ -336,17 +376,6 @@ li {
         grid-column-start: 2;        
     }    
        
-    .rsn-pelicula {
-        background-color:rgb(250,250,220);
-        font-size:18px;
-    } 
-
-    .lista-peliculas {
-        display: inline;
-    }
-
-    .item-pelicula {
-        width: 20%;
-    }      
+     
 }     
  
