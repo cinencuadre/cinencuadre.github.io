@@ -1,4 +1,4 @@
-/*body {
+body {
     font-family:"Optima", sans-serif;
 }
 
@@ -81,13 +81,13 @@ li {
 	max-width: 100%;
 }
 
-.marco-completo {
+/*.marco-completo {
     background-color:rgb(250,180,130);
-}
+}*/
 
 
 .marco-reducido {
-    background-color:rgb(145,115,225);
+    /*background-color:rgb(145,115,225);*/
     font-size:18px;
 }
 
@@ -107,12 +107,12 @@ li {
 }
 
 .cuadro {
-    background-color:rgb(246, 228, 183);
+    background-color:rgb(250, 250, 220);
     font-size:18px;
     /*padding: 2%;*/
 }
 
-/*
+
 .img-portada {
     width:100%;
     box-sizing: border-box;
@@ -146,7 +146,7 @@ li {
     margin:0%;
     padding:0%;
     border: 1px solid rgb(220,220,220);
-    background-color: rgb(240,240,240);	
+    background-color: rgb(250,250,220);	
 }
 
 .item-pelicula a {
@@ -222,9 +222,9 @@ li {
 
 
 @media screen and (min-width: 650px) and (max-width:1000px) {
-	body {
+	/*body {
 		background-color: blue; 
-    }
+    }*/
 
 	.marco-reducido {
 		display: grid;
@@ -233,9 +233,9 @@ li {
 		row-gap: 3em;*/
     }	
 
-    /*
+    
     .rsn-pelicula {
-        background-color:rgb(250,250,220);
+        /*background-color:rgb(250,250,220);*/
         font-size:18px;
     } 
 
@@ -291,9 +291,9 @@ li {
 
 
 @media screen and (min-width: 1000px) {
-	body { 
+	/*body { 
 		background-color: red; 
-    }
+    }*/
 
     .marco-reducido {
 		display: grid;
@@ -302,7 +302,7 @@ li {
 		/*row-gap: 3em;*/
     }
 
-    /*
+    
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -334,7 +334,7 @@ li {
         /*width: 20%;*/
     } 
 
-    /*
+    
     #logo {
         width:30%;
         padding:2%;
@@ -377,4 +377,4 @@ li {
        
      
 }    
-*/
+
