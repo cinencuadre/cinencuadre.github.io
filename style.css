@@ -47,7 +47,7 @@ header {
 }
 
 #logo-instagram {
-    width: 10%;
+    width: 5%;
     height: auto;
     padding: 2%;
     margin: 0%;
@@ -62,7 +62,7 @@ header {
     float: left;
     color: rgb(240, 240, 220);
     text-align: center;
-    padding: 2% 2%;
+    padding: 1% 2%;
     text-decoration: none;
 
 }
@@ -137,7 +137,7 @@ header {
     }
 
     #logo-instagram {
-        width: 7%;
+        width: 3%;
     }
 
     .lista-peliculas {
@@ -150,8 +150,8 @@ header {
     
     .cont-peliculas {
         grid-template-columns: 1fr 1fr;
-        column-gap: 1em;
-        row-gap: 1em;
+        column-gap: 2em;
+        row-gap: 2em;
         padding: 2%;        
     }
 
@@ -168,7 +168,7 @@ header {
     }
 
     #logo-instagram {
-        width: 5%;
+        width: 2%;
     }
 
     .lista-peliculas {
@@ -181,8 +181,8 @@ header {
 
     .cont-peliculas {
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1em;
-        row-gap: 1em;
+        column-gap: 2em;
+        row-gap: 2em;
         padding: 2%;
     }
 }
