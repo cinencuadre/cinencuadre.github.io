@@ -35,13 +35,22 @@ header {
 }
 
 #logo-redes {
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
     background-color: rgb(40,40,40);
     width: 100%;
+}
+
+#siguenos {
+    text-align: right;
 }
 
 #logo-instagram {
     width: 10%;
     height: auto;
+    padding: 2%;
+    margin: 0%;
 }
 
 .navbar {
@@ -100,7 +109,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     padding: 2%;
-    background-color: rgb(220, 230, 90)
+    /*background-color: rgb(220, 230, 90)*/
 }
 
 .img-resena {
