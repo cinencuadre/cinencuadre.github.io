@@ -87,6 +87,13 @@ header {
     .cont-peliculas {
         grid-template-columns: 1fr 1fr;
     }
+
+    .img-resena {
+        width: 94%;
+        padding-left: 3%;
+        padding-right: 3%;
+        height: auto;
+    }
 }
 
 
