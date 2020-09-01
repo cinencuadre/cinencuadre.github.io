@@ -2,7 +2,7 @@ body {
     font-family: "Optima", sans-serif;
 } 
 
-header, nav, footer, sectiob, article, div {
+header, nav, footer, section, article, div {
     box-sizing: border-box;
 }
 
@@ -12,4 +12,25 @@ img, object, video, embed, iframe {
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0%;
+
+}
+
+header {
+    background-color: black;
+}
+
+#banda-superior {
+    background-color: black;
+}
+
+#logo {
+    background-color: black;
+}
+
+@media screen and (min-width: 650 px) and (max-width: 1000 px) {
+
+}
+
+@media screen and (min-width: 1000 px) {
+
 }
