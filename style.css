@@ -51,6 +51,7 @@ header {
 .lista-peliculas {
     list-style: none;
     margin: 0%;
+    padding: 0%;
 }
 
 .item-pelicula {
@@ -58,6 +59,8 @@ header {
     text-align: center;
     border: 1px solid rgb(220, 220, 220);
     background-color: rag(250, 250, 250);
+    margin: 0%;
+    padding: 0%;
 }
 
 .item-pelicula a {
@@ -71,11 +74,17 @@ header {
     background-color: rgb(220, 230, 90)
 }
 
-#pie-pagina {
-    background-color: rgb(40, 40, 40);
+.img-resena {
+    height: auto;
 }
 
-#pie pagina {
+#pie-pagina {
+    background-color: rgb(40, 40, 40);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#pie-pagina p {
     text-align: center;
 }
 
@@ -98,19 +107,16 @@ header {
     }
 
     .item-pelicula {
-        width: 33,3333333%;
+        width: 33.3333333%;
     }
     
     .cont-peliculas {
         grid-template-columns: 1fr 1fr;
+        column-gap: 0.5em;
+        row-gap: 0.5em;
+        padding: 2%;        
     }
 
-    .img-resena {
-        width: 94%;
-        padding-left: 3%;
-        padding-right: 3%;
-        height: auto;
-    }
 }
 
 
