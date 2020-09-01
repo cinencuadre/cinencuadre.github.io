@@ -40,12 +40,30 @@ header {
     height: auto;
 }
 
+.lista-peliculas {
+    list-style: none;
+}
+
+.item-pelicula {
+    line-height: 3em;
+    text-align: center;
+    border: 1px solid rgb(220, 220, 220);
+    background-color: rag(250, 250, 250);
+}
+
+.item-pelicula a {
+    text-decoration: none;
+}
+
 .cont-peliculas {
     display: grid;
     grid-template-columns: 1fr;
     padding: 2%;
     background-color: rgb(220, 230, 90)
 }
+
+
+
 
 @media screen and (min-width: 650 px) and (max-width: 1000 px) {
 
@@ -58,10 +76,21 @@ header {
         width: 7%;
     }
 
+    .lista-peliculas {
+        display: inline;
+    }
+
+    .item-pelicula {
+        width: 33,3333333%;
+    }
+    
     .cont-peliculas {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+
 
 @media screen and (min-width: 1000 px) {
 
@@ -72,6 +101,14 @@ header {
 
     #logo-instagram {
         width: 5%;
+    }
+
+    .lista-peliculas {
+        display: inline;
+    }
+
+    .item-pelicula {
+        width: 20%;
     }
 
     .cont-peliculas {
