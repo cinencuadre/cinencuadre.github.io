@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
+p {
+    text-align: justify;
+}
+
 header {
     background-color: black;
 }
@@ -40,8 +44,13 @@ header {
     height: auto;
 }
 
+.img-portada {
+    width: 100%;
+}
+
 .lista-peliculas {
     list-style: none;
+    margin: 0%;
 }
 
 .item-pelicula {
@@ -62,10 +71,18 @@ header {
     background-color: rgb(220, 230, 90)
 }
 
+#pie-pagina {
+    background-color: rgb(40, 40, 40);
+}
+
+#pie pagina {
+    text-align: center;
+}
 
 
 
-@media screen and (min-width: 650 px) and (max-width: 1000 px) {
+
+@media screen and (min-width: 650px) and (max-width: 1000px) {
 
     #logo {
         width: 35%;
@@ -99,7 +116,7 @@ header {
 
 
 
-@media screen and (min-width: 1000 px) {
+@media screen and (min-width: 1000px) {
 
     #logo {
         width: 30%;
