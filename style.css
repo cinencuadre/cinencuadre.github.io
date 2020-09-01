@@ -35,11 +35,31 @@ header {
     width: 100%;
 }
 
+#logo-instagram {
+    width: 10%;
+    height: auto;
+}
+
+.cont-peliculas {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2%;
+    background-color: rgb(220, 230, 90)
+}
+
 @media screen and (min-width: 650 px) and (max-width: 1000 px) {
 
     #logo {
         width: 35%;
         padding: 3%;
+    }
+
+    #logo-instagram {
+        width: 7%;
+    }
+
+    .cont-peliculas {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -47,6 +67,17 @@ header {
 
     #logo {
         width: 30%;
+        padding: 2%;
+    }
+
+    #logo-instagram {
+        width: 5%;
+    }
+
+    .cont-peliculas {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0.5em;
+        row-gap: 0.5em;
         padding: 2%;
     }
 }
