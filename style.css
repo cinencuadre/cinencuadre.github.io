@@ -21,16 +21,32 @@ header {
 
 #banda-superior {
     background-color: black;
+    text-align: center;
 }
 
 #logo {
     background-color: black;
+    width: 40%;
+    padding: 5%;
+}
+
+#logo-redes {
+    background-color: rgb(40,40,40);
+    width: 100%;
 }
 
 @media screen and (min-width: 650 px) and (max-width: 1000 px) {
 
+    #logo {
+        width: 35%;
+        padding: 3%;
+    }
 }
 
 @media screen and (min-width: 1000 px) {
 
+    #logo {
+        width: 30%;
+        padding: 2%;
+    }
 }
