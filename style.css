@@ -18,14 +18,14 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
     text-align: center;
     font-size:35px;
-    padding-top: 2em;
-    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
 }
 
 h2 {
     font-size: 28px;
-    padding-top: 2em;
-    padding-bottom: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 0.8em;
 }
 
 h3 {
@@ -50,7 +50,8 @@ p {
     text-align: justify;
     font-size: 16px;
     padding-top: 0.5em;
-    padding-bottom: 1.3em;
+    padding-bottom: 1em;
+    line-height: 1.5em;
 }
 
 li {
@@ -135,7 +136,10 @@ header {
     text-align: center;
     border: 1px solid rgb(220, 220, 220);
     background-color: rag(250, 250, 250);
-    margin: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
     padding: 0.5em;
     float: left;
 }
@@ -155,6 +159,7 @@ header {
 
 .img-resena {
     height: auto;
+    margin-top: 1%;
 }
 
 #pie-pagina {
@@ -182,13 +187,13 @@ header {
         width: 3%;
     }
 
-    .lista-peliculas {
+    /*.lista-peliculas {
         display: inline;
     }
 
     .item-pelicula {
         width: 33.3333333%;
-    }
+    }*/
     
     .cont-peliculas {
         grid-template-columns: 1fr 1fr;
@@ -213,13 +218,13 @@ header {
         width: 2%;
     }
 
-    .lista-peliculas {
+    /*.lista-peliculas {
         display: inline;
     }
 
     .item-pelicula {
         width: 20%;
-    }
+    }*/
 
     .cont-peliculas {
         grid-template-columns: 1fr 1fr 1fr;
